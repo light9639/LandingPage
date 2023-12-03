@@ -1,0 +1,24 @@
+@mixin pc() {
+    @media (max-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin pc-lg() {
+    @media (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin tb() {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+
+@mixin m() {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
