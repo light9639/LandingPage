@@ -1,1 +1,172 @@
-.footer {}
+.footer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+
+    .group-area {
+        position: absolute;
+        top: 50%;
+        left: 6.25vw;
+        width: 87.5vw;
+        transform: translateY(-50%);
+        z-index: 50;
+
+        .mail {
+            position: relative;
+
+            a {
+                display: block;
+
+                .linkFoot {
+                    position: relative;
+                    display: inline-block;
+
+                    &.linkFoot-top span {
+                        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+                    }
+
+                    &.linkFoot-bottom {
+                        p {
+                            -webkit-text-stroke: 2px #d1ed5d;
+                        }
+
+                        span {
+                            color: #d1ed5d;
+                            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                        }
+                    }
+
+                    &.on span {
+                        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+                        transition: clip-path 0.5s ease-out 0s,
+                            -webkit-clip-path 0.5s ease-out 0s;
+                    }
+
+                    p {
+                        color: transparent;
+                        font-family: "Monument Grotesk";
+                        font-weight: normal;
+                        font-size: 7.5vw;
+                        -webkit-text-stroke: 2px #fff;
+                        text-decoration: none;
+                        transition: clip-path 1s;
+                        display: block;
+                    }
+
+                    span {
+                        color: #fff;
+                        font-family: "Monument Grotesk";
+                        font-weight: normal;
+                        font-size: 7.5vw;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transition: clip-path 0.5s ease-out 0s,
+                            -webkit-clip-path 0.5s ease-out 0s;
+                    }
+                }
+            }
+        }
+    }
+
+    .credits {
+        position: absolute;
+        bottom: 5vh;
+        right: 6.25vw;
+        overflow: hidden;
+        -webkit-transform: translateY(50%);
+        transform: translateY(50%);
+
+        .credits-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &>p {
+                color: #fff;
+                font-family: "Monument Grotesk";
+                font-weight: normal;
+                font-size: 27px;
+                position: relative;
+
+                sub {
+                    top: -0.5em;
+                    margin-left: 3px;
+                    vertical-align: baseline;
+                    font-size: 75%;
+                    position: relative;
+                }
+            }
+
+            .credits-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    position: relative;
+                    color: #fff;
+                    font-family: "Monument Grotesk";
+                    font-weight: normal;
+                    font-size: 27px;
+                    position: relative;
+
+                    &.divider {
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .social-footer {
+        position: absolute;
+        bottom: 5vh;
+        left: 6.25vw;
+        overflow: hidden;
+        transform: translateY(50%);
+
+        .social-footer-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                position: relative;
+                color: #d1ed5d;
+                font-family: "Monument Grotesk";
+                font-weight: normal;
+                font-size: 27px;
+                position: relative;
+
+                &.divider {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #d1ed5d;
+
+                    &:hover::before {
+                        width: 100%;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0%;
+                        width: 0%;
+                        left: 0;
+                        height: 2px;
+                        background-color: #d1ed5d;
+                        transition: width 0.35s ease-in-out 0s;
+                    }
+                }
+            }
+        }
+    }
+}

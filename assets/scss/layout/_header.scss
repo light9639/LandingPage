@@ -1,18 +1,24 @@
 .header {
-    .inner {}
+    position: relative;
+
+    .inner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 25;
+    }
 
     .logo-wrap {
         position: fixed;
         left: 0;
         width: 100vw;
         z-index: 50;
-        top: 0;
-        // top: -10vh;
+        top: 7vh;
         transition: top 0.5s ease-in-out 0s;
 
         .logo {
             position: absolute;
-            top: 5vh;
             left: 6.25vw;
             transform: translateY(-50%);
             height: 40px;
@@ -20,9 +26,108 @@
         }
 
         .logo-link {
-            img {}
+            display: block;
+            width: 64px;
+            height: 40px;
         }
     }
 
-    .gnb {}
+    .gnb {
+        position: absolute;
+        top: 0;
+        transform: translateY(-100%);
+        transition: 1s;
+        opacity: 0;
+        visibility: hidden;
+
+        &.on {
+            top: 5vh;
+            transform: translate(0%);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &.main {
+            left: 25vw;
+        }
+
+        &.sub {
+            left: 37.5vw;
+        }
+
+        .list {
+            .item {
+                margin-bottom: 5px;
+
+                .link {
+                    position: relative;
+                    text-decoration: none;
+                    color: #fff;
+                    font-family: "Monument Grotesk";
+                    font-weight: normal;
+                    font-size: 19px;
+                    text-transform: uppercase;
+
+                    &:hover::before {
+                        width: calc(100% + 12px);
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: -6px;
+                        width: 0%;
+                        height: 2px;
+                        background-color: #d1ed5d;
+                        transition: width 0.35s ease-in-out 0s;
+                    }
+                }
+            }
+        }
+    }
+
+    .group-time {
+        display: flex;
+        transform: scale(0.8);
+        flex-direction: column;
+        position: absolute;
+        top: 5vh;
+        right: 3vw;
+
+        .time-wrap {
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            margin-top: -0.2em;
+            margin-bottom: -0.2em;
+            letter-spacing: 0.02em;
+            font-size: 1.2em;
+            font-weight: 300;
+            line-height: 1.7;
+
+            em {
+                width: 2.6em;
+            }
+
+            .time {
+                width: 4.5em;
+            }
+
+            .dot {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 1.35em;
+                height: 1.35em;
+
+                .circle {
+                    width: 0.5em;
+                    height: 0.5em;
+                    background-color: #d1ed5d;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
 }

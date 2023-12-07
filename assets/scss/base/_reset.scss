@@ -58,4 +58,19 @@ ul {
 body {
     background: #000;
     color: #fff;
+    font-family: 'Monument Grotesk', "Pretendard",
+        sans-serif;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #d1ed5d;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        position: absolute;
+    }
 }

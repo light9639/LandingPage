@@ -1,7 +1,37 @@
 /**
+ * 사이트 부드럽게하기
+ */
+const lenis = new Lenis()
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time) => {
+    lenis.raf(time * 1000)
+})
+
+gsap.ticker.lagSmoothing(0)
+
+/**
+ * 컨텐츠가 있는 링크 클릭시 커서 이미지 변경
+ */
+$('.linkCont').hover(function () {
+    $('.cursor').addClass('on')
+}, function () {
+    $('.cursor').removeClass('on')
+})
+
+/**
+ * 컨텐츠가 없는 링크 클릭시 커서 크기
+ */
+$('.mouseHoverDown').hover(function () {
+    $('.cursor').addClass('scale')
+}, function () {
+    $('.cursor').removeClass('scale')
+})
+
+/**
  * 마우스 따라다니게
  */
-
 function mouseFollower(e) {
     gsap.to('.cursor', 0.75, {
         css: {
@@ -13,7 +43,7 @@ function mouseFollower(e) {
 document.addEventListener('mousemove', mouseFollower);
 
 /**
- * @mouseFollowerEvent : 커서가 링크 위에 올라갔을 때는 마우스 스토커가 보이지 않도록 함.
+ * 커서가 링크 위에 올라갔을 때는 마우스 스토커가 보이지 않도록 함.
  */
 function mouseFollowerEvent() {
     const linkList = document.querySelectorAll('.link');
@@ -30,279 +60,327 @@ function mouseFollowerEvent() {
 }
 
 /**
- * @mt : 메인비주얼 애니메이션 타임라인
- * - 로고, 네비게이션 메뉴 blur 조절
- * - 텍스트 올라오기
+ * header 메뉴 클릭하면 각자의 위치로 이동시키기
  */
-gsap.set('.header .logo-wrap', {
-    'opacity': '0',
-    'transform': 'matrix(0, 0, 0, 0, 0, 0)',
+let ItemList = document.querySelectorAll('.gnb .item a');
+ItemList.forEach(el => {
+    let item = el.innerText.toLowerCase();
+
+    el.addEventListener('click', (e) => {
+        e.preventDefault();
+        const element = document.querySelector(`.sc-${item}`);
+        element.scrollIntoView({ behavior: 'smooth' });
+    })
 })
-gsap.set('.gnb .list', {
-    'opacity': '0',
-    'transform': 'matrix(0, 0, 0, 0, 0, 0)',
-})
-gsap.set('.sc-visual__typo .overflow .text', { yPercent: 100 })
+
+/**
+ * header 애니메이션 타임라인
+ */
+gsap.set('.header .logo-wrap', { yPercent: 100, opacity: 0 })
+gsap.set('.header .gnb.main .list', { yPercent: 100, opacity: 0 })
+gsap.set('.header .gnb.sub .list', { yPercent: 200, opacity: 0 })
+gsap.set('.header .group-time', { yPercent: 100, opacity: 0 })
 
 const mt = gsap.timeline();
 mt
     .addLabel('main1')
     .to('.header .logo-wrap', {
+        yPercent: 0,
         opacity: 1,
-        ease: Expo.easeInOut,
         delay: 0.2,
         duration: 2,
-        'opacity': '1',
-        'transform': 'matrix(1, 0, 0, 1, 0, 0)',
     }, 'main1')
-    .to('.gnb .list', {
-        opacity: 1,
-        stagger: 0.2,
-        delay: 0.4,
-        duration: 2,
-        'opacity': '1',
-        'transform': 'matrix(1, 0, 0, 1, 0, 0)',
-        ease: Expo.easeInOut
-    }, 'main1')
-
-    .addLabel('main2')
-    .to('.sc-visual__oval-border', {
-        scale: 1,
-    })
-    .to('.sc-visual__typo .overflow .text', {
+    .to('.header .gnb .list', {
         yPercent: 0,
-        stagger: 0.2,
-        delay: -1,
+        opacity: 1,
         duration: 2,
-        ease: Expo.easeInOut,
-    }, 'main2');
+    }, 'main1')
+    .to('.header .group-time', {
+        yPercent: 0,
+        opacity: 1,
+        duration: 2,
+    }, 'main1')
 
-// 메인 비주얼 텍스트 애니메이션
-Splitting();
-gsap.set('.sc-visual__desc .char', { yPercent: 200 });
-gsap.to('.sc-visual__desc .char', 1, {
-    scrollTrigger: {
-        trigger: ".sc-visual__desc .char",
-    },
-    yPercent: 0,
-    stagger: 0.03
+/**
+ * 실시간 한국 시간 가져오기
+ */
+const koreaTarget = document.querySelector(".header .koTime");
+function koreaTime() {
+    const koreaTime = new Date().toLocaleString("en-US", { timeZone: "Asia/Seoul", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
+    koreaTarget.innerText = koreaTime;
+}
+koreaTime();
+setInterval(koreaTime, 1000);
+
+/**
+ * 실시간 미국 시간 가져오기
+ */
+const YorkTarget = document.querySelector(".header .nyTime");
+function NewYorkTime() {
+    const YorkTime = new Date().toLocaleString("en-US", { timeZone: "America/New_York", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
+    YorkTarget.innerText = YorkTime;
+}
+NewYorkTime();
+setInterval(NewYorkTime, 1000);
+
+/**
+ * 맨위와 맨 아래에 도착했을 때 header 메뉴 사라짐
+ */
+$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    var innerHeight = $(window).innerHeight();
+    var scrollHeight = $('body').prop('scrollHeight');
+    if (scrollTop == 0 || scrollTop + innerHeight >= scrollHeight) {
+        $('.header .gnb').addClass('on')
+    } else {
+        $('.header .gnb').removeClass('on')
+    }
+})
+
+/**
+ * sc-visual 이미지 나오게 하기
+ */
+gsap.set('.sc-visual .img-wrap', {
+    clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)',
+});
+gsap.set('.sc-visual .img-wrap picture', {
+    transform: 'translateY(30vh)'
+});
+gsap.set('.sc-visual .img-wrap img', {
+    transform: 'scale(1.4)',
+    clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)'
 });
 
-// (공통) 헤드라인 텍스트 애니메이션
-textList = document.querySelectorAll('.headline');
+const visual = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.sc-visual',
+    }
+});
+
+visual
+    .addLabel('visual') // 이걸 쓰면 동시에 실행됨
+    .to('.sc-visual .img-wrap', {
+        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+        duration: 0.5,
+    }, 'visual')
+    .to('.sc-visual .img-wrap picture', {
+        transform: 'matrix(1, 0, 0, 1, 0, 0)',
+        duration: 0.5,
+        delay: 0.5,
+    }, 'visual')
+    .to('.sc-visual .img-wrap img', {
+        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+        transform: 'matrix(1.002, 0, 0, 1.002, 0, 0)',
+        duration: 0.5,
+        delay: 0.5,
+    }, 'visual');
+
+/**
+ * 각 섹션의 title-area 부분에 gsap 적용
+ */
+textList = document.querySelectorAll('.title-area');
 textList.forEach(element => {
-    child = element.querySelectorAll('.overflow .text');
-    gsap.set(child, { yPercent: 200 });
+    child = element.querySelectorAll('.title-area .title');
+    gsap.set(child, { yPercent: 100 });
     gsap.to(child, {
         scrollTrigger: {
             trigger: element,
             start: "0% 80%",
         },
         yPercent: 0,
-        ease: Expo.easeInOut,
         duration: 2,
+        opacity: 1,
+        stagger: 0.2
+    });
+
+    desc = element.querySelectorAll('.title-area .desc');
+    gsap.set(desc, { yPercent: 50, opacity: 0 });
+    gsap.to(desc, {
+        scrollTrigger: {
+            trigger: element,
+            start: "0% 80%",
+        },
+        duration: 2,
+        delay: 0.5,
+        yPercent: 0,
+        opacity: 1,
         stagger: 0.2
     });
 });
 
-TextSwiper = new Swiper(".sc-textslide .swiper", {
-    effect: "fade",
-    speed: 500,
-    navigation: {
-        nextEl: ".sc-textslide .btn-next",
-        prevEl: ".sc-textslide .btn-prev"
-    },
-})
-
 /**
- * 포트폴리오 리스트 json 받아오기
- * @listClassName : 롤링 배너 방향을 지정하는 클래스명을 담는 변수. list1은 왼쪽, list는 오른쪽으로 흘러감.
- * @tagDataList : json에서 태그를 담아둔 배열을 저장하는 변수.
- * @htmlTagData : 배열 원소들을 각 span 태그에 담기위한 html을 담는 변수.
+ * listItem에 접근하면 투명도와 이미지 크기를 변화시키기
  */
-// fetch('./assets/data/pofolData.json')
-//     .then((response) => response.json())
-//     .then((json) => {
-//         data = json.items;
-//         let html = '';
-//         let listClassName = 'list1';
+let itemList = document.querySelectorAll('.listItem');
+let linkList = document.querySelectorAll('.listItem .linkCont');
+let infoList = document.querySelectorAll('.listItem .info');
 
-//         data.forEach(element => {
-//             let htmlReelItem = `<li class="sc-pofol__reel-item">
-//                                 <span>VIEW CASE</span><span class="sc-pofol__icon-box"><i class="circle"></i><i class="arrow"></i></span>
-//                             </li>`;
-//             let tagDataList = element.snippet.tag.map(element => { return element; });
-//             let htmlTagData = '';
-
-//             tagDataList.forEach(element => { htmlTagData += `<span class="tag">${element}</span>`; })
-
-//             html += `<li class="sc-pofol__item pofol-item">
-//                     <div class="sc-pofol__desc-area">
-//                         <div class="sc-pofol__text-box">
-//                             <h3 class="title" data-splitting>${element.snippet.title}</h3>
-//                         </div>
-//                         <div class="sc-pofol__link-box">
-//                             <a href="${element.snippet.reviewLink}" class="link" target="_blank">
-//                                 <span class="sc-pofol__oval oval"><span class="oval-text" data-text="CODE REVIEW">CODE REVIEW</span></span>
-//                             </a>
-//                         </div>
-//                     </div>
-//                     <div class="sc-pofol__img-area ${listClassName}">
-//                         <div class="sc-pofol__img-box">
-//                             <a href="${element.snippet.shorcutLink}" target="_blank" class="sc-pofol__img-link link"><img src="${element.snippet.img}" alt="${element.snippet.alt}"></a>
-//                         </div>
-//                         <div class="sc-pofol__reel-box">
-//                             <a href="${element.snippet.shorcutLink}" target="_blank" class="sc-pofol__reel-link ${listClassName} link">
-//                                 <ul class="sc-pofol__reel-list">
-//                                     ${htmlReelItem}
-//                                     ${htmlReelItem}
-//                                 </ul>
-//                                 <ul class="sc-pofol__reel-list">
-//                                     ${htmlReelItem}
-//                                     ${htmlReelItem}
-//                                 </ul>
-//                             </a>
-//                         </div>
-//                         <div class="sc-pofol__tag-box">
-//                             ${htmlTagData}
-//                         </div>
-//                     </div>
-//                 </li>`
-//             listClassName === 'list1' ? listClassName = 'list2' : listClassName = 'list1';
-//         });
-//         document.getElementById('pofolList').innerHTML += html;
-//         portfolioMotion();
-//         mouseFollowerEvent();
-//     })
-
-/**
- *  @portfolioMotion : 동적으로 생성되는 요소를 선택하기 위해 함수로 만들어 호출
- *  스크롤 시, 
- *  - 포폴 이미지 애니메이션
- *  - 텍스트, 버튼 애니메이션
- */
-function portfolioMotion() {
-    pofolList = document.querySelectorAll('.sc-pofol__item');
-    pofolList.forEach(element => {
-        Splitting();
-
-        const pofolImgArea = element.querySelector('.sc-pofol__img-area');
-        const pofolImg = element.querySelector('.sc-pofol__img-area img');
-        const textChar = element.querySelectorAll('.title .char');
-        const linkBox = element.querySelector('.sc-pofol__link-box');
-
-        pofolImgArea.classList.contains('list1')
-            ? gsap.set(pofolImgArea, { clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)" })
-            : gsap.set(pofolImgArea, { clipPath: "polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%)" });
-        gsap.set(textChar, { yPercent: 100, opacity: 0 });
-        gsap.set(linkBox, { yPercent: 100, opacity: 0 });
-
-        let t1 = gsap.timeline({
+itemList.forEach((el, i) => {
+    gitList = el.querySelector('.git-link');
+    if (gitList) {
+        gsap.set(gitList, { opacity: 0 })
+        gsap.to(gitList, {
             scrollTrigger: {
-                trigger: element,
-                start: "0% 80%",
-                end: "100% 100%",
+                trigger: linkList[i],
+                start: "50% 100%",
+                end: "100% 0%"
             },
-            ease: "Expo.easeInOut"
-        })
-            .addLabel('a')
-        t1.to(textChar, {
             opacity: 1,
-            yPercent: 0,
-            stagger: 0.02,
-        }, 'a')
-        t1.to(linkBox, {
-            yPercent: 0, opacity: 1,
-            duration: 1
-        }, 'a')
-        pofolImgArea.classList.contains('list1') ?
-            t1.to(pofolImgArea, 2, {
-                clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                delay: -1,
-                duration: 2,
-                ease: "Expo.easeInOut"
-            })
-            :
-            t1.to(pofolImgArea, 2, {
-                clipPath: "polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%)",
-                delay: -1,
-                duration: 2,
-                ease: "Expo.easeInOut"
-            });
+            delay: 0.5,
+            duration: 1.5
+        });
+    }
 
-        gsap.to(pofolImg, 2, {
-            scrollTrigger: {
-                trigger: pofolImg.parentElement,
-                scrub: 2
-            },
-            yPercent: -15,
-        })
-    });
-
-    gsap.to('.list1 .sc-pofol__reel-list', 22, {
-        xPercent: -100,
-        repeat: -1,
-        ease: 'none'
-    })
-    gsap.to('.list2 .sc-pofol__reel-list', 22, {
-        xPercent: 100,
-        repeat: -1,
-        ease: 'none'
-    })
-}
-
-/**
- * sc-about 텍스트 애니메이션
- * - 타이틀 텍스트 올라오기
- * - 문장, 태그 동시에 나타나기
- */
-aboutList = document.querySelectorAll('.sc-about__item');
-aboutList.forEach(element => {
-    const titleText = element.querySelectorAll('.sc-about__title .text');
-    const charText = element.querySelectorAll('.sc-about__desc-list .char');
-    const tag = element.querySelectorAll('.sc-about__tag');
-
-    gsap.set(titleText, { yPercent: 100 });
-    gsap.set(charText, { yPercent: 200, opacity: 0 });
-    gsap.set(tag, { yPercent: 100, opacity: 0 });
-
-    const t2 = gsap.timeline({
+    imgList = el.querySelectorAll('img, video')
+    gsap.set(imgList, { filter: 'brightness(0.25)', })
+    gsap.to(imgList, {
         scrollTrigger: {
-            trigger: element,
-            start: "0% 80%",
-        }
+            trigger: linkList[i],
+            start: "75% 100%",
+            end: "100% 0%"
+        },
+        filter: 'brightness(1)',
+        delay: 0.5,
+        duration: 1.5
     });
-
-    t2
-        .to(titleText, { yPercent: 0 })
-        .addLabel('a')
-        .to(charText, {
-            yPercent: 0,
-            opacity: 1,
-            stagger: 0.03
-        }, 'a')
-        .to(tag, {
-            yPercent: 0,
-            opacity: 1,
-            stagger: 0.4,
-        }, 'a')
-});
-gsap.to('.sc-about__bg-box', {
-    scrollTrigger: {
-        trigger: '.sc-about__bg',
-        scrub: 5,
-    },
-    xPercent: -15
 })
 
+infoList.forEach((el, i) => {
+    gsap.to(el, {
+        scrollTrigger: {
+            trigger: linkList[i],
+            start: "100% 100%",
+            end: "100% 0%",
+            stagger: 0.2,
+        },
+        opacity: 1,
+    });
+})
+
+linkList.forEach((element, i) => {
+    gsap.set(element, {
+        opacity: 0,
+        clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)',
+    });
+    gsap.to(element, {
+        scrollTrigger: {
+            trigger: linkList[i],
+            start: "50% 100%",
+            end: "100% 0%",
+        },
+        opacity: 1,
+        duration: 0.75,
+        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+    })
+
+    picList = element.querySelectorAll('picture');
+    gsap.set(picList, {
+        transform: 'translateY(30vh)'
+    });
+    gsap.to(picList, {
+        scrollTrigger: {
+            trigger: linkList[i],
+            start: "50% 100%",
+            end: "100% 0%"
+        },
+        duration: 0.75,
+        delay: 0.2,
+        transform: 'matrix(1, 0, 0, 1, 0, 0)',
+    })
+
+    imgList = element.querySelectorAll('img, video');
+    gsap.set(imgList, {
+        clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)',
+        transform: 'scale(1)'
+    });
+    gsap.to(imgList, {
+        scrollTrigger: {
+            trigger: linkList[i],
+            start: "50% 100%",
+            end: "100% 0%"
+        },
+        duration: 0.75,
+        delay: 0.2,
+        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+        transform: 'matrix(1.002, 0, 0, 1.002, 0, 0)'
+    });
+})
+
+gsap.set('.sc-introduce .text-big h3', { yPercent: 100, opacity: 0 });
+gsap.set('.sc-introduce .text-scroll a', { yPercent: 100, opacity: 0 });
+
+const intro = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.sc-introduce'
+    }
+});
+
+intro
+    .to('.sc-introduce .text-big h3', {
+        yPercent: 0,
+        opacity: 1,
+        duration: 1.5,
+    })
+    .to('.sc-introduce .text-scroll a', {
+        yPercent: 0,
+        opacity: 1,
+    })
 
 /**
- * @ft : footer 애니메이션 타임라인
- * - 텍스트 애니메이션
+ * sc-marquee 보이면 이동하도록
  */
-gsap.set('.footer__headline .text', { yPercent: 100 });
-gsap.set('.footer__contact-area', { yPercent: 100, opacity: 0 });
-gsap.set('.footer__policy-area .char', { yPercent: 100, opacity: 0 });
+let marqueeList = document.querySelectorAll('.sc-marquee [data-parallax-x]')
+
+marqueeList.forEach(element => {
+    gsap.to(element, {
+        scrollTrigger: {
+            trigger: '.sc-marquee',
+            start: "0% 100%",
+            end: "100% 0%",
+            scrub: 0, // 스크롤 되돌아오면 거꾸로 실행
+        },
+        xPercent: element.dataset.parallaxX,
+        ease: 'none'
+    });
+})
+
+/**
+ * 숫자 증가 함수
+ */
+let number = document.querySelectorAll('.insights-list .inview')
+let startCount = { var: 0 };
+let NumList = [22, 176, 18, 1000]
+
+number.forEach((element, i) => {
+    gsap.to(startCount, {
+        var: element.innerText, duration: 5, ease: "none",
+        onUpdate: changeNumber,
+        scrollTrigger: {
+            trigger: ".insights-list .inview",
+        },
+    })
+    function changeNumber() {
+        number[i].innerHTML = (startCount.var).toFixed();
+    }
+})
+
+/**
+ * footer 텍스트 호버하면 색 채우기
+ */
+$('.footer .mail .linkFoot').hover(function () {
+    if ($(this).hasClass('on') == true) {
+        $(this).removeClass('on').siblings().addClass('on');
+    } else {
+        return
+    }
+})
+
+/**
+ * footer 애니메이션 타임라인
+ */
+gsap.set('.mail .linkFoot-wrap .linkFoot', { yPercent: 100, opacity: 0 });
+gsap.set('.credits-area', { yPercent: 100, opacity: 0 });
+gsap.set('.social-footer-area', { yPercent: 100, opacity: 0 });
 
 const ft = gsap.timeline({
     scrollTrigger: {
@@ -311,21 +389,29 @@ const ft = gsap.timeline({
 });
 
 ft
-    .to('.footer__headline .text', {
+    .to('.mail .linkFoot-wrap .linkFoot', {
         yPercent: 0,
+        opacity: 1,
         stagger: 0.2,
         duration: 2,
-        ease: Expo.easeInOut,
     })
     .addLabel('f1')
-    .to('.footer__contact-area', {
+    .to('.credits-area', {
         yPercent: 0,
         opacity: 1,
-        delay: -0.4
     }, 'f1')
-    .to('.footer__policy-area .char', {
+    .to('.social-footer-area', {
         yPercent: 0,
         opacity: 1,
-        stagger: 0.03,
-        delay: -0.4
     }, 'f1');
+
+gsap.to('.state', {
+    scrollTrigger: {
+        trigger: '.wrapper',
+        start: "0% 0%",
+        end: "100% 100%",
+        scrub: 0,
+    },
+    ease: "none", // 일정하게
+    "--width": "100%"
+})

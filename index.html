@@ -32,7 +32,7 @@
     <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-128.png" sizes="128x128" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" target="_blank" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -54,223 +54,645 @@
                         </a>
                     </h1>
                 </div>
-                <nav class="gnb">
+                <nav class="gnb main on">
                     <ul class="list">
                         <li class="item">
-                            <a href="#about" class="link">ABOUT</a>
+                            <a href="#" class="link">visual</a>
                         </li>
                         <li class="item">
-                            <a href="#WebSite" class="link">WebSite</a>
+                            <a href="#" class="link">selected</a>
                         </li>
                         <li class="item">
-                            <a href="#pofol" class="link">PORTFOLO</a>
+                            <a href="#" class="link">introduce</a>
                         </li>
                         <li class="item">
-                            <a href="#contact" class="link">CONTACT</a>
+                            <a href="#" class="link">framwork</a>
                         </li>
                     </ul>
                 </nav>
+                <nav class="gnb sub on">
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#" class="link">textslide</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">insights</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="group-time">
+                    <div class="time-wrap kor">
+                        <span class="blind">한국 현재 시간</span>
+                        <em>KOR</em>
+                        <div class="time koTime"></div>
+                        <span class="dot">
+                            <span class="circle"></span>
+                        </span>
+                    </div>
+                    <div class="time-wrap nyc">
+                        <span class="blind">뉴욕 현재 시간</span>
+                        <em>NYC</em>
+                        <div class="time nyTime"></div>
+                        <span class="dot">
+                            <span class="circle"></span>
+                        </span>
+                    </div>
+                </div>
             </div>
         </header>
         <main class="container main">
             <section class="sc-visual">
-                <h2 class="blind"></h2>
+                <h2 class="blind">메인 텍스트</h2>
                 <div class="inner">
-                    <h3 class="title">
-                        We are an award-winning<br>
-                        creative agency based in Italy.<br>
-                        We are focused on Digital projects,<br>
-                        Branding and Strategy.
-                    </h3>
-                    <p>Take your time and scroll down</p>
+                    <header class="title-area">
+                        <div class="title-wrap">
+                            <h2 class="title fill">Learning,</h2>
+                            <h2 class="title fill">Growing,</h2>
+                            <h2 class="title stroke">and Developing</h2>
+                        </div>
+                        <p class="desc">웹접근성 코드로 차별없는 서비스를 제공하고
+                            시멘틱 마크업을 통해 SEO에 도움되는 웹을 만들며
+                            새로운 프레임워크를 꾸준히 공부하며 항상 발전하는 퍼블리셔가 되겠습니다.</p>
+                    </header>
+                    <div class="img-wrap">
+                        <picture>
+                            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbUdmfB%2Fbtr21CPAaHB%2FMhxjkwvdpyO6bFf52a6cvK%2Fimg.webp"
+                                alt="상단 이미지">
+                        </picture>
+                    </div>
                 </div>
             </section>
             <section class="sc-selected">
-                <header class="txt-area">
-                    <div class="title">
-                        <h2 class="title">Selected</h2>
-                        <h2 class="title">Works</h2>
-                    </div>
-                    <span class="desktop">Discover our case
-                        studies</span>
-                </header>
+                <div class="inner">
+                    <header class="title-area">
+                        <div class="title-wrap">
+                            <h2 class="title fill">Portfolio</h2>
+                            <h2 class="title stroke">2023~</h2>
+                        </div>
+                        <span class="desc">Watch my recent portfolio</span>
+                    </header>
+                </div>
                 <section class="select-top">
                     <h2 class="blind">포트폴리오 상단 이미지</h2>
-                    <section data-order="0" class="full">
-                        <div class="listItem">
-                            <div class="projectImage">
-                                <a class="linkCont" href="#">
-                                    <picture>
-                                        <img class="lazy-slide" src="./assets/images/minutos-placer-pinea.webp" alt="">
-                                    </picture>
-                                </a>
+                    <div class="inner">
+                        <section class="full">
+                            <div class="listItem">
+                                <div class="projectImage">
+                                    <a class="linkCont" target="_blank" href="https://light9639.github.io/Pinea/">
+                                        <picture>
+                                            <img class="lazy-slide" src="./assets/images/minutos-placer-pinea.webp"
+                                                alt="Pinea 사이트 이미지">
+                                        </picture>
+                                    </a>
+                                    <a target="_blank" href="https://github.com/light9639/Pinea"
+                                        class="git-link black mouseHoverDown">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                            <path
+                                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <h3>Pinea</h3>
+                                    <h4>
+                                        <a target="_blank" href="https://github.com/light9639/Pinea"
+                                            class="mouseHoverDown">
+                                            Pinea &amp; Github Page Link
+                                        </a>
+                                    </h4>
+                                    <div class="tag-box">
+                                        <span class="tag">#HTML</span>
+                                        <span class="tag">#SCSS</span>
+                                        <span class="tag">#JS</span>
+                                        <span class="tag">#GSAP</span>
+                                        <span class="tag">#SWIPER</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="info">
-                                <h3>Pinea</h3>
-                                <h4>Web &amp; Digital / Ecommerce Website</h4>
+                        </section>
+                        <section class="full">
+                            <div class="listItem">
+                                <div class="projectImage">
+                                    <a class="linkCont" target="_blank" href="https://light9639.github.io/HangokTire/">
+                                        <picture>
+                                            <video src="./assets/images/LC_iONXFE_1920_970_231030.webm"
+                                                poster="./assets/images/LC_iONXFE_1920_970_231030.webp" loop autoplay
+                                                muted></video>
+                                        </picture>
+                                    </a>
+                                    <a target="_blank" href="https://github.com/light9639/HangokTire"
+                                        class="git-link mouseHoverDown">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                            <path
+                                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <h3>Hangok Tire</h3>
+                                    <h4>
+                                        <a target="_blank" href="https://github.com/light9639/HangokTire"
+                                            class="mouseHoverDown">
+                                            Hangok Tire &amp; Github Page Link
+                                        </a>
+                                    </h4>
+                                    <div class="tag-box">
+                                        <span class="tag">#HTML</span>
+                                        <span class="tag">#SCSS</span>
+                                        <span class="tag">#JS</span>
+                                        <span class="tag">#SWIPER</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="full">
-                        <div class="listItem">
-                            <div class="projectImage">
-                                <a class="linkCont" href="https://light9639.github.io/HangokTire/">
-                                    <picture>
-                                        <video src="./assets/images/LC_iONXFE_1920_970_231030.webm"
-                                            poster="./assets/images/LC_iONXFE_1920_970_231030.webp" loop autoplay
-                                            muted></video>
-                                    </picture>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h3>Hangok Tire</h3>
-                                <h4>Shooting / Adv Campaign</h4>
-                            </div>
-                        </div>
-                    </section>
+                        </section>
+                    </div>
                 </section>
                 <section class="select-bottom">
                     <h2 class="blind">포트폴리오 하단 이미지</h2>
-                    <div class="wrapper">
-                        <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                            data-scroll-offset="10%">
-                            <div class="linkCont">
-                                <a href="https://light9639.github.io/NaverClone/" class="wrp">
-                                    <div class="imageprj">
-                                        <picture class="picture">
-                                            <img class="lazy-slide" src="./assets/images/naver.png" alt="">
-                                        </picture>
+                    <div class="inner">
+                        <div class="group-area">
+                            <div class="listItem">
+                                <div class="content">
+                                    <a class="img-wrap">
+                                        <a target="_blank" href="https://light9639.github.io/NaverClone/"
+                                            class="linkCont">
+                                            <picture>
+                                                <img class="lazy-slide" src="./assets/images/img_intro_v2.jpg"
+                                                    alt="네이버 사이트 이미지">
+                                            </picture>
+                                        </a>
+                                        <a target="_blank" href="https://github.com/light9639/NaverClone"
+                                            class="git-link mouseHoverDown">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                <path
+                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                            </svg>
+                                        </a>
+                                    </a>
+                                    <div class="info">
+                                        <h3>Naver</h3>
+                                        <h4>
+                                            <a target="_blank" href="https://github.com/light9639/NaverClone"
+                                                class="mouseHoverDown">
+                                                Naver &amp; Github Page Link
+                                            </a>
+                                        </h4>
+                                        <div class="tag-box">
+                                            <span class="tag">#HTML</span>
+                                            <span class="tag">#CSS</span>
+                                        </div>
                                     </div>
-                                </a>
-                                <div class="info">
-                                    <h3>Naver</h3>
-                                    <h4>Web &amp; Digital / Corporate Website</h4>
+                                </div>
+                            </div>
+                            <div class="listItem">
+                                <div class="content">
+                                    <div class="img-wrap">
+                                        <a target="_blank" href="https://light9639.github.io/HubizNet/"
+                                            class="linkCont">
+                                            <picture>
+                                                <img class="lazy-slide" src="./assets/images/sec03_img01.jpg"
+                                                    alt="휴비즈넷 사이트 이미지">
+                                            </picture>
+                                        </a>
+                                        <a target="_blank" href="https://github.com/light9639/HubizNet"
+                                            class="git-link mouseHoverDown">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                <path
+                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <h3>HubizNet</h3>
+                                        <h4>
+                                            <a target="_blank" href="https://github.com/light9639/HubizNet"
+                                                class="mouseHoverDown">
+                                                HubizNet &amp; Github Page Link
+                                            </a>
+                                        </h4>
+                                        <div class="tag-box">
+                                            <span class="tag">#HTML</span>
+                                            <span class="tag">#SCSS</span>
+                                            <span class="tag">#JS</span>
+                                            <span class="tag">#GSAP</span>
+                                            <span class="tag">#SWIPER</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listItem">
+                                <div class="content">
+                                    <div class="img-wrap">
+                                        <div class="img-content">
+                                            <a target="_blank" href="https://light9639.github.io/Mayplace/"
+                                                class="linkCont">
+                                                <picture>
+                                                    <img class="lazy-slide"
+                                                        src="./assets/images/keyvisual_thumimage_4.jpg"
+                                                        alt="메이플레이스 사이트 이미지지">
+                                                </picture>
+                                            </a>
+                                            <a target="_blank" href="https://github.com/light9639/Mayplace"
+                                                class="git-link mouseHoverDown">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3>MayPlace</h3>
+                                        <h4>
+                                            <a target="_blank" href="https://github.com/light9639/Mayplace"
+                                                class="mouseHoverDown">
+                                                MayPlace &amp; Github Page Link
+                                            </a>
+                                        </h4>
+                                        <div class="tag-box">
+                                            <span class="tag">#HTML</span>
+                                            <span class="tag">#SCSS</span>
+                                            <span class="tag">#JS</span>
+                                            <span class="tag">#SWIPER</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                            data-scroll-offset="10%">
-                            <a class="linkCont" href="#" alt="Scopri progetto">
-                                <div class="wrp">
-                                    <div class="imageprj">
-                                        <picture class="picture">
-                                            <img class="lazy-slide" src="./assets/images/sec03_img01.jpg" alt="">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <h3>HubizNet</h3>
-                                    <h4>Web &amp; Digital / Personal Website</h4>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                            data-scroll-offset="10%">
-                            <a class="linkCont" href="#" alt="Scopri progetto">
-                                <div class="wrp">
-                                    <div class="imageprj">
-                                        <picture class="picture">
-                                            <img class="lazy-slide" src="./assets/images/keyvisual_thumimage_4.jpg"
-                                                alt="AWD Agency - Shooting Cromia">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <h3>MayPlace</h3>
-                                    <h4>Shooting / Adv Campaign</h4>
-                                </div>
-                            </a>
-                        </div>
                     </div>
                 </section>
-                <section data-order="5" class="two-cols once" data-scroll="" data-scroll-call="updateScroll">
-                    <div class="wrapper">
-                        <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                            data-scroll-offset="10%">
-                            <a class="linkCont" href="#" alt="Scopri progetto">
-                                <div class="wrp">
-                                    <div class="imageprj">
-                                        <picture class="picture">
-                                            <img class="lazy-slide" src="./assets/images/file_1694575679_0.jpg" alt="">
-                                        </picture>
+                <section class="two-cols once">
+                    <div class="inner">
+                        <div class="group-area">
+                            <div class="listItem">
+                                <div class="content">
+                                    <div class="img-wrap">
+                                        <div class="img-content">
+                                            <a target="_blank" href="https://light9639.github.io/Dotori/"
+                                                class="linkCont">
+                                                <picture>
+                                                    <img class="lazy-slide" src="./assets/images/file_1694575679_0.jpg"
+                                                        alt="도토리 포스터 이미지">
+                                                </picture>
+                                            </a>
+                                            <a target="_blank" href="https://github.com/light9639/Dotori"
+                                                class="git-link  black mouseHoverDown">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3>Dotori Poster</h3>
+                                        <h4>
+                                            <a target="_blank" href="https://github.com/light9639/Dotori"
+                                                class="mouseHoverDown">Dotori
+                                                Poster &amp; Github Page Link</a>
+                                        </h4>
+                                        <div class="tag-box">
+                                            <span class="tag">#HTML</span>
+                                            <span class="tag">#SCSS</span>
+                                            <span class="tag">#JS</span>
+                                            <span class="tag">#GSAP</span>
+                                            <span class="tag">#SWIPER</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="info">
-                                    <h3>Dotori Poster</h3>
-                                    <h4>Shooting / Adv Campaign</h4>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                            data-scroll-offset="10%">
-                            <a class="linkCont" href="#" alt="Scopri progetto">
-                                <div class="wrp">
-                                    <div class="imageprj">
-                                        <picture class="picture">
-                                            <img class="lazy-slide" src="./assets/images/visual-left04.jpg" alt="">
-                                        </picture>
+                            </div>
+                            <div class="listItem">
+                                <div class="content">
+                                    <div class="img-wrap">
+                                        <div class="img-content">
+                                            <a target="_blank" href="https://light9639.github.io/Seoul-City/"
+                                                class="linkCont">
+                                                <picture>
+                                                    <img class="lazy-slide"
+                                                        src="./assets/images/Seoul_City_Hall_20190608_001.jpg"
+                                                        alt="서울 시청 이미지">
+                                                </picture>
+                                            </a>
+                                            <a target="_blank" href="https://github.com/light9639/Seoul-City"
+                                                class="git-link black mouseHoverDown">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3>Seoul City</h3>
+                                        <h4>
+                                            <a target="_blank" href="https://github.com/light9639/Seoul-City"
+                                                class="mouseHoverDown">
+                                                Seoul City &amp; Github Page Link
+                                            </a>
+                                        </h4>
+                                        <div class="tag-box">
+                                            <span class="tag">#HTML</span>
+                                            <span class="tag">#SCSS</span>
+                                            <span class="tag">#JS</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="info">
-                                    <h3>Seoul City</h3>
-                                    <h4>Web &amp; Digital / Ecommerce Website</h4>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </section>
             </section>
             <section class="sc-introduce">
                 <h2 class="blind">중간 소개 텍스트</h2>
-                <div class="text-big">
-                    <h3>Thanks to a team of young,
-                        dynamic and
-                        motivated talents, we have been carrying out cutting-edge projects with unique and
-                        innovative
-                        design, combining creativity, strategy and technology. </h3>
+                <div class="inner">
+                    <div class="text-big">
+                        <h3>기초 공사가 탄탄한! 마크업을 하려고 노력하며 더불어 효율적인
+                            CSS사용과 시선을 사로잡는 동적인 Javascript로 시선을 사로잡고 다양한 프레임워크와 라이브러리를 배우며 성장하는 도전적인 사람이 되고 싶습니다.</h3>
+                    </div>
+                    <div class="text-scroll">
+                        <a class="mouseHoverDown" href="#">About Me</a>
+                    </div>
                 </div>
-                <div class="text-scroll">
-                    <a class="mouseHoverDown" href="#">About Awd Agency</a>
+            </section>
+            <section class="sc-framwork">
+                <div class="inner">
+                    <header class="title-area">
+                        <div class="title-wrap">
+                            <h2 class="title fill">REACT & VUE</h2>
+                            <h2 class="title stroke">Frameworks</h2>
+                        </div>
+                        <span class="desc">Watch Frameworks
+                            portfolio</span>
+                    </header>
+                    <section class="one-cols">
+                        <div class="group-area">
+                            <div class="listItem">
+                                <div class="content">
+                                    <div class="img-wrap">
+                                        <a target="_blank" href="https://light9639-portfolio.netlify.app/"
+                                            class="linkCont">
+                                            <picture>
+                                                <img class="lazy-slide" src="./assets/images/laptop-working.gif"
+                                                    alt="이전 포트폴리오 사이트 이미지">
+                                            </picture>
+                                        </a>
+                                        <a target="_blank" href="https://github.com/light9639/PortFolio/"
+                                            class="git-link black mouseHoverDown">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                <path
+                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <h3>PortFolio</h3>
+                                        <h4>
+                                            <a target="_blank" href="https://github.com/light9639/PortFolio"
+                                                class="mouseHoverDown">
+                                                PortFolio & Github Page Link
+                                            </a>
+                                        </h4>
+                                        <div class="tag-box">
+                                            <span class="tag">#REACT</span>
+                                            <span class="tag">#TAILWIND</span>
+                                            <span class="tag">#ROTTIEJS</span>
+                                            <span class="tag">#REDUX</span>
+                                            <span class="tag">#VITE</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listItem">
+                                <div class="content">
+                                    <div class="img-wrap">
+                                        <a target="_blank" href="https://light9639.github.io/Calculator/"
+                                            class="linkCont">
+                                            <picture>
+                                                <img class="lazy-slide"
+                                                    src="https://user-images.githubusercontent.com/95972251/211260833-6ba22b74-e7d0-4f30-a7db-68df80256e95.png"
+                                                    alt="React 계산기 이미지">
+                                            </picture>
+                                        </a>
+                                        <a target="_blank" href="https://github.com/light9639/Calculator/"
+                                            class="git-link mouseHoverDown">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                <path
+                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <h3>React Calculator</h3>
+                                        <h4>
+                                            <a target="_blank" href="https://github.com/light9639/Calculator/"
+                                                class="mouseHoverDown">
+                                                React Calculator & Github Page Link
+                                            </a>
+                                        </h4>
+                                        <div class="tag-box">
+                                            <span class="tag">#React</span>
+                                            <span class="tag">#Styled Component</span>
+                                            <span class="tag">#Vite</span>
+                                            <span class="tag">#TypeScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listItem">
+                                <div class="content">
+                                    <div class="img-wrap">
+                                        <a target="_blank" href="https://light9639.github.io/TodoList/"
+                                            class="linkCont">
+                                            <picture>
+                                                <img class="lazy-slide"
+                                                    src="https://raw.githubusercontent.com/light9639/TodoList/master/public/light9639.github.io_TodoList_.png"
+                                                    alt="React TodoList 사이트 이미지">
+                                            </picture>
+                                        </a>
+                                        <a target="_blank" href="https://github.com/light9639/TodoList/"
+                                            class="git-link mouseHoverDown">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                <path
+                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <h3>React TodoList</h3>
+                                        <h4>
+                                            <a target="_blank" href="https://github.com/light9639/TodoList/"
+                                                class="mouseHoverDown">
+                                                React TodoList &amp; Github Page Link
+                                            </a>
+                                        </h4>
+                                        <div class="tag-box">
+                                            <span class="tag">#React</span>
+                                            <span class="tag">#TypeScript</span>
+                                            <span class="tag">#Module.scss</span>
+                                            <span class="tag">#Vite</span>
+                                            <span class="tag">#LocalStorage</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="two-cols once">
+                        <div class="group-area">
+                            <div class="listItem">
+                                <div class="content">
+                                    <div class="img-wrap">
+                                        <a target="_blank" href="https://light9639.github.io/Vue-Calculator/"
+                                            class="linkCont">
+                                            <picture>
+                                                <img class="lazy-slide"
+                                                    src="https://user-images.githubusercontent.com/95972251/211576884-7236ebd8-4c19-400b-a0e2-4328de089003.png"
+                                                    alt="Vue로 만든 계산기 이미지">
+                                            </picture>
+                                        </a>
+                                        <a target="_blank" href="https://github.com/light9639/Vue-Calculator"
+                                            class="git-link black mouseHoverDown">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                <path
+                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="info black">
+                                        <h3>Vue Calculator</h3>
+                                        <h4>
+                                            <a target="_blank" href="https://github.com/light9639/Vue-Calculator"
+                                                class="mouseHoverDown">
+                                                Vue Calculator &amp; Github Page Link
+                                            </a>
+                                        </h4>
+                                        <div class="tag-box">
+                                            <span class="tag">#Vue</span>
+                                            <span class="tag">#Vite</span>
+                                            <span class="tag">#Composition API</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listItem">
+                                <div class="content">
+                                    <div class="img-wrap">
+                                        <a target="_blank" href="https://light9639.github.io/Vuex-TodoList/"
+                                            class="linkCont">
+                                            <picture>
+                                                <img class="lazy-slide"
+                                                    src="https://user-images.githubusercontent.com/95972251/213455952-06bd0e3b-a0c5-407b-9af3-a4d2a8bfb608.png"
+                                                    alt="Vuex TodoList 사이트 이미지">
+                                            </picture>
+                                        </a>
+                                        <a target="_blank" href="https://github.com/light9639/Vuex-TodoList"
+                                            class="git-link mouseHoverDown">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                <path
+                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="info">
+                                        <h3>Vuex TodoList</h3>
+                                        <h4>
+                                            <a target="_blank" href="https://github.com/light9639/Vuex-TodoList"
+                                                class="mouseHoverDown">
+                                                Vuex TodoList & Github Page Link
+                                            </a>
+                                        </h4>
+                                        <div class="tag-box">
+                                            <span class="tag">#Vue</span>
+                                            <span class="tag">#Vite</span>
+                                            <span class="tag">#Vuex</span>
+                                            <span class="tag">#Vuex-Persistedstate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="three-col">
+                        <div class="listItem">
+                            <div class="img-wrap">
+                                <a class="linkCont" target="_blank" href="https://shoe-store-lemon.vercel.app/">
+                                    <picture>
+                                        <img src="./assets/images/mainBanner01.png" alt="Nike Store 이미지">
+                                    </picture>
+                                </a>
+                                <a target="_blank" href="https://github.com/light9639/Nike-Store"
+                                    class="git-link mouseHoverDown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                        <path
+                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <h3>Nike Store</h3>
+                                <h4>
+                                    <a target="_blank" href="https://github.com/light9639/Nike-Store"
+                                        class="mouseHoverDown">
+                                        Nike Store & Github Page Link
+                                    </a>
+                                </h4>
+                                <div class="tag-box">
+                                    <span class="tag">#REACT</span>
+                                    <span class="tag">#NEXT.JS</span>
+                                    <span class="tag">#TAILWIND</span>
+                                    <span class="tag">#REDUX</span>
+                                    <span class="tag">#REACT-QUERY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </section>
             <section class="sc-textslide">
-                <h2 class="blind">이동호 Gitub, Tistory swiper</h2>
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <a class="swiper-slide" href="#">
-                            <video muted="" autoplay="" loop=""
-                                poster="https://tistory1.daumcdn.net/tistory/5610541/skin/images/SouredAppleClouds.jpg">
-                                <source
-                                    src="https://tistory1.daumcdn.net/tistory/5610541/skin/images/SouredAppleClouds.mp4"
-                                    type="video/mp4">
-                                <strong>Your browser does not support the video tag.</strong>
-                            </video>
-                            <div class="info">
-                                <h3>Tistory & Github</h3>
-                                <h4>Web &amp; Digital / Corporate Website</h4>
+                <h2 class="blind">이동호 Tistory 소개 페이지</h2>
+                <div class="inner">
+                    <header class="title-area">
+                        <div class="title-wrap">
+                            <h2 class="title stroke">저는 Tistory에 개발 관련 지식을 정리하고 있습니다.</h2>
+                        </div>
+                    </header>
+                    <div class="listItem">
+                        <div class="content">
+                            <div class="img-wrap">
+                                <a target="_blank" href="https://light9639.tistory.com/" class="linkCont">
+                                    <picture>
+                                        <video muted autoplay loop
+                                            poster="https://tistory1.daumcdn.net/tistory/5610541/skin/images/SouredAppleClouds.jpg">
+                                            <source
+                                                src="https://tistory1.daumcdn.net/tistory/5610541/skin/images/SouredAppleClouds.mp4"
+                                                type="video/mp4">
+                                            <strong>Your browser does not support the video tag.</strong>
+                                        </video>
+                                    </picture>
+                                </a>
                             </div>
-                        </a>
-                        <a class="swiper-slide" href="#">
-                            <img src="./assets/images/github.webp" alt="깃허브 이미지">
                             <div class="info">
-                                <h3>Tistory & Github</h3>
-                                <h4>Web &amp; Digital / Corporate Website</h4>
+                                <h3>Light9639 Tistory</h3>
+                                <h4>
+                                    <a href="https://light9639.tistory.com/" class="mouseHoverDown">Light9639 Tistory
+                                        &amp; Page Link</a>
+                                </h4>
+                                <div class="tag-box">
+                                    <span class="tag">#HTML5</span>
+                                    <span class="tag">#CSS3</span>
+                                    <span class="tag">#LOTTIE.JS</span>
+                                    <span class="tag">#TYPING.JS</span>
+                                    <span class="tag">#SWIPER</span>
+                                </div>
                             </div>
-                        </a>
-                        <button class="btn btn-prev">
-                            <span class="blind">이전</span>
-                        </button>
-                        <button class="btn btn-next">
-                            <span class="blind">다음</span>
-                        </button>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="sc-marquee">
                 <h2 class="blind">흐르는 텍스트 부분</h2>
                 <div class="one">
-                    <h3 class="horizontal-marquees" data-scroll="" data-scroll-direction="horizontal"
-                        data-scroll-speed="-10" data-scroll-target=".new-text-marquee">
+                    <h3 class="horizontal-marquees" data-parallax-x="10">
                         Web &amp; Digital Web &amp; Digital Web &amp; Digital Web &amp; Digital Web &amp;
                         Digital Web &amp;
                         Digital Web &amp; Digital Web &amp; Digital Web &amp; Digital Web &amp; Digital Web
@@ -284,8 +706,7 @@
                         Digital Web &amp; Digital Web &amp; Digital </h3>
                 </div>
                 <div class="two">
-                    <h3 class="horizontal-marquees" data-scroll="" data-scroll-direction="horizontal"
-                        data-scroll-speed="-3" data-scroll-target=".new-text-marquee">
+                    <h3 class="horizontal-marquees" data-parallax-x="-10">
                         Identity &amp; Advertising Identity &amp; Advertising Identity &amp; Advertising
                         Identity &amp;
                         Advertising Identity &amp; Advertising Identity &amp; Advertising Identity &amp;
@@ -305,8 +726,7 @@
                         Identity &amp; Advertising Identity &amp; Advertising </h3>
                 </div>
                 <div class="three">
-                    <h3 class="horizontal-marquees" data-scroll="" data-scroll-direction="horizontal"
-                        data-scroll-speed="7" data-scroll-target=".new-text-marquee">
+                    <h3 class="horizontal-marquees" data-parallax-x="10">
                         Social Media Marketing &amp; Strategy Social Media Marketing &amp; Strategy Social Media
                         Marketing
                         &amp; Strategy Social Media Marketing &amp; Strategy Social Media Marketing &amp;
@@ -332,1802 +752,98 @@
                         &amp; Strategy Social Media Marketing &amp; Strategy </h3>
                 </div>
             </section>
-            <section class="sc-LastImg">
-                <section class="one-cols">
-                    <div class="listItem">
-                        <a class="linkCont" href="#" alt="Scopri progetto">
-                            <div class="wrp">
-                                <div class="imageprj">
-                                    <picture class="picture">
-                                        <img class="lazy-slide" src="./assets/images/laptop-working.gif" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h3>PortFolio</h3>
-                                <h4>Shooting / Stories</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="listItem">
-                        <a class="linkCont" href="#" alt="Scopri progetto">
-                            <div class="wrp">
-                                <div class="imageprj">
-                                    <picture class="picture">
-                                        <img class="lazy-slide" src="./assets/images/wonfesta_event.jpg"
-                                            alt="AWD Agency - Shooting Keys">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h3>Woori Bank</h3>
-                                <h4>Shooting / Adv Campaign</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="listItem">
-                        <div class="linkCont">
-                            <div class="wrp">
-                                <div class="imageprj">
-                                    <picture class="picture">
-                                        <img class="lazy-slide" src="./assets/images/mainBanner_01.jpg" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h3>BookSaTong</h3>
-                                <h4>Identity</h4>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="two-cols once">
-                    <div class="wrapper">
-                        <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                            data-scroll-offset="10%">
-                            <a class="linkCont" href="#" alt="Scopri progetto">
-                                <div class="wrp">
-                                    <div class="imageprj">
-                                        <picture class="picture">
-                                            <img class="lazy-slide" src="./assets/images/news_03.png" alt="">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <h3>Netflix</h3>
-                                    <h4>Web &amp; Digital / Ecommerce Website</h4>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                            data-scroll-offset="10%">
-                            <a class="linkCont" href="#" alt="Scopri progetto">
-                                <div class="wrp">
-                                    <div class="imageprj">
-                                        <picture class="picture">
-                                            <img class="lazy-slide" src="./assets/images/mainBanner01.jpg" alt="">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <h3>StarBucks</h3>
-                                    <h4>Shooting / Adv Campaign</h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <section class="three-col">
-                    <div class="listItem">
-                        <div class="projectImage" data-scroll="" data-scroll-offset="10%"
-                            data-scroll-call="home-new-layout-1">
-                            <a class="linkCont" href="#" alt="Scopri progetto">
-                                <picture>
-                                    <img src="./assets/images/mainBanner01.png" alt="">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="info">
-                            <h3>Nike Store</h3>
-                            <h4>Video / Fashion Film</h4>
-                        </div>
-                    </div>
-                </section>
-            </section>
             <section class="sc-insights">
-                <h2 class="headline">
-                    Awd Agency
-                    Insights
-                </h2>
-                <ul>
-                    <li>
-                        <p>Years</p>
-                        <div class="inner">
-                            <h3 class="inview">
-                                <span>9</span>
-                                <span>9</span>
-                            </h3>
-                            <h4>22</h4>
+                <div class="inner">
+                    <header class="title-area">
+                        <div class="title-wrap">
+                            <h2 class="title fill">Portfolio</h2>
+                            <h2 class="title stroke">Insights</h2>
                         </div>
-                    </li>
-                    <li>
-                        <p>Awards</p>
-                        <div class="inner">
-                            <h3 class="inview">
-                                <span>9</span>
-                                <span>9</span>
-                            </h3>
-                            <h4>176</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <p>People</p>
-                        <div class="inner">
-                            <h3 class="inview">
-                                <span>9</span>
-                                <span>9</span>
-                            </h3>
-                            <h4>18</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <p>Creativity</p>
-                        <div class="inner">
-                            <h3 class="inview">
-                                <span>9</span>
-                                <span>9</span>
-                            </h3>
-                            <h4>∞</h4>
-                        </div>
-                    </li>
-                </ul>
+                    </header>
+                    <ul class="insights-list">
+                        <li>
+                            <p>Age</p>
+                            <div class="text-wrap">
+                                <h3 class="inview">
+                                    29
+                                </h3>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Awards</p>
+                            <div class="text-wrap">
+                                <h3 class="inview">
+                                    176
+                                </h3>
+                            </div>
+                        </li>
+                        <li>
+                            <p>People</p>
+                            <div class="text-wrap">
+                                <h3 class="inview">
+                                    18
+                                </h3>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Study Time</p>
+                            <div class="text-wrap">
+                                <h3 class="inview">
+                                    <!-- ∞ -->
+                                    1000
+                                </h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <div id="homepage" class="animateSection" data-scroll-section="" data-scroll-section-inview="">
-                <!-- <div class="new-block-title-big" data-scroll="" data-scroll-call="new-block-title-big"
-                    data-scroll-offset="15%">
-                    <div class="title">
-                        <h3>Selected</h3>
-                        <h3>Works</h3>
-                    </div>
-                    <span class="desktop">Discover our case
-                        studies</span>
-                </div> -->
-                <div class="wrapper-without-slider desktop exclude-all-tablet">
-                    <!-- <section data-order="0" class="full">
-                        <div class="listItem">
-                            <div class="projectImage" data-scroll="" data-scroll-offset="10%"
-                                data-scroll-call="home-new-layout-1">
-                                <a class="linkCont" href="#" alt="Scopri progetto">
-                                    <picture>
-                                        <img class="lazy-slide" src="./assets/images/minutos-placer-pinea.webp" alt="">
-                                    </picture>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h3>Pinea</h3>
-                                <h4>Web &amp; Digital / Ecommerce Website</h4>
-                            </div>
-                        </div>
-                    </section>
-                    <section data-order="1" class="full">
-                        <div class="listItem">
-                            <div class="projectImage" data-scroll="" data-scroll-offset="10%"
-                                data-scroll-call="home-new-layout-1">
-                                <a class="linkCont" href="https://light9639.github.io/HangokTire/"
-                                    alt="Scopri progetto">
-                                    <picture>
-                                        <video src="./assets/images/LC_iONXFE_1920_970_231030.webm"
-                                            poster="./assets/images/LC_iONXFE_1920_970_231030.webp" loop autoplay
-                                            muted></video>
-                                    </picture>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h3>Hangok Tire</h3>
-                                <h4>Shooting / Adv Campaign</h4>
-                            </div>
-                        </div>
-                    </section> -->
-                    <!-- <section data-order="2" class="three-cols once" data-scroll="" data-scroll-call="updateScroll">
-                        <div class="wrapper">
-                            <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                                data-scroll-offset="10%">
-                                <div class="linkCont">
-                                    <a href="https://light9639.github.io/NaverClone/" class="wrp">
-                                        <div class="imageprj">
-                                            <picture class="picture">
-                                                <img class="lazy-slide" src="./assets/images/naver.png" alt="">
-                                            </picture>
-                                        </div>
-                                    </a>
-                                    <div class="info">
-                                        <h3>Naver</h3>
-                                        <h4>Web &amp; Digital / Corporate Website</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                                data-scroll-offset="10%">
-                                <a class="linkCont" href="#" alt="Scopri progetto">
-                                    <div class="wrp">
-                                        <div class="imageprj">
-                                            <picture class="picture">
-                                                <img class="lazy-slide" src="./assets/images/sec03_img01.jpg" alt="">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <h3>HubizNet</h3>
-                                        <h4>Web &amp; Digital / Personal Website</h4>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                                data-scroll-offset="10%">
-                                <a class="linkCont" href="#" alt="Scopri progetto">
-                                    <div class="wrp">
-                                        <div class="imageprj">
-                                            <picture class="picture">
-                                                <img class="lazy-slide" src="./assets/images/keyvisual_thumimage_4.jpg"
-                                                    alt="AWD Agency - Shooting Cromia">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <h3>MayPlace</h3>
-                                        <h4>Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </section> -->
-                    <!-- <section data-order="5" class="two-cols once" data-scroll="" data-scroll-call="updateScroll">
-                        <div class="wrapper">
-                            <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                                data-scroll-offset="10%">
-                                <a class="linkCont" href="#" alt="Scopri progetto">
-                                    <div class="wrp">
-                                        <div class="imageprj">
-                                            <picture class="picture">
-                                                <img class="lazy-slide" src="./assets/images/file_1694575679_0.jpg"
-                                                    alt="">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <h3>Dotori Poster</h3>
-                                        <h4>Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                                data-scroll-offset="10%">
-                                <a class="linkCont" href="#" alt="Scopri progetto">
-                                    <div class="wrp">
-                                        <div class="imageprj">
-                                            <picture class="picture">
-                                                <img class="lazy-slide" src="./assets/images/visual-left04.jpg" alt="">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <h3>Seoul City</h3>
-                                        <h4>Web &amp; Digital / Ecommerce Website</h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </section> -->
-                    <!-- <section class="new-text-block-about" data-scroll="" data-scroll-call="new-text-block-about"
-                        data-scroll-offset="15%">
-                        <div class="text-big">
-                            <h3>Thanks to a team of young,
-                                dynamic and
-                                motivated talents, we have been carrying out cutting-edge projects with unique and
-                                innovative
-                                design, combining creativity, strategy and technology. </h3>
-                        </div>
-                        <div class="text-scroll">
-                            <a class="mouseHoverDown" href="#">About Awd Agency</a>
-                        </div>
-                    </section> -->
-                    <!-- <section data-order="7" class="full">
-                        <div class="listItem">
-                            <div class="projectImage" data-scroll="" data-scroll-offset="10%"
-                                data-scroll-call="home-new-layout-1">
-                                <a class="linkCont" href="#" alt="Scopri progetto">
-                                    <picture>
-                                        <video muted="" autoplay="" loop=""
-                                            poster="https://tistory1.daumcdn.net/tistory/5610541/skin/images/SouredAppleClouds.jpg">
-                                            <source
-                                                src="https://tistory1.daumcdn.net/tistory/5610541/skin/images/SouredAppleClouds.mp4"
-                                                type="video/mp4">
-                                            <strong>Your browser does not support the video tag.</strong>
-                                        </video>
-                                        <img src="./assets/images/github.webp" alt="">
-                                        <img src="https://www.awdagency.com/main/wp-content/uploads/2023/06/Sikha-Cover.jpg"
-                                            alt="">
-                                    </picture>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h3>Tistory & Github</h3>
-                                <h4>Web &amp; Digital / Corporate Website</h4>
-                            </div>
-                        </div>
-                    </section> -->
-                    <!-- <section class="new-text-marquee">
-                        <div class="one">
-                            <h3 class="horizontal-marquees" data-scroll="" data-scroll-direction="horizontal"
-                                data-scroll-speed="-10" data-scroll-target=".new-text-marquee">
-                                Web &amp; Digital Web &amp; Digital Web &amp; Digital Web &amp; Digital Web &amp;
-                                Digital Web &amp;
-                                Digital Web &amp; Digital Web &amp; Digital Web &amp; Digital Web &amp; Digital Web
-                                &amp; Digital
-                                Web &amp; Digital Web &amp; Digital Web &amp; Digital Web &amp; Digital Web &amp;
-                                Digital Web &amp;
-                                Digital Web &amp; Digital Web &amp; Digital Web &amp; Digital Web &amp; Digital Web
-                                &amp; Digital
-                                Web &amp; Digital Web &amp; Digital Web &amp; Digital Web &amp; Digital Web &amp;
-                                Digital Web &amp;
-                                Digital Web &amp; Digital Web &amp; Digital </h3>
-                        </div>
-                        <div class="two">
-                            <h3 class="horizontal-marquees" data-scroll="" data-scroll-direction="horizontal"
-                                data-scroll-speed="-3" data-scroll-target=".new-text-marquee">
-                                Identity &amp; Advertising Identity &amp; Advertising Identity &amp; Advertising
-                                Identity &amp;
-                                Advertising Identity &amp; Advertising Identity &amp; Advertising Identity &amp;
-                                Advertising
-                                Identity &amp; Advertising Identity &amp; Advertising Identity &amp; Advertising
-                                Identity &amp;
-                                Advertising Identity &amp; Advertising Identity &amp; Advertising Identity &amp;
-                                Advertising
-                                Identity &amp; Advertising Identity &amp; Advertising Identity &amp; Advertising
-                                Identity &amp;
-                                Advertising Identity &amp; Advertising Identity &amp; Advertising Identity &amp;
-                                Advertising
-                                Identity &amp; Advertising Identity &amp; Advertising Identity &amp; Advertising
-                                Identity &amp;
-                                Advertising Identity &amp; Advertising Identity &amp; Advertising Identity &amp;
-                                Advertising
-                                Identity &amp; Advertising Identity &amp; Advertising </h3>
-                        </div>
-                        <div class="three">
-                            <h3 class="horizontal-marquees" data-scroll="" data-scroll-direction="horizontal"
-                                data-scroll-speed="7" data-scroll-target=".new-text-marquee">
-                                Social Media Marketing &amp; Strategy Social Media Marketing &amp; Strategy Social Media
-                                Marketing
-                                &amp; Strategy Social Media Marketing &amp; Strategy Social Media Marketing &amp;
-                                Strategy Social
-                                Media Marketing &amp; Strategy Social Media Marketing &amp; Strategy Social Media
-                                Marketing &amp;
-                                Strategy Social Media Marketing &amp; Strategy Social Media Marketing &amp; Strategy
-                                Social Media
-                                Marketing &amp; Strategy Social Media Marketing &amp; Strategy Social Media Marketing
-                                &amp; Strategy
-                                Social Media Marketing &amp; Strategy Social Media Marketing &amp; Strategy Social Media
-                                Marketing
-                                &amp; Strategy Social Media Marketing &amp; Strategy Social Media Marketing &amp;
-                                Strategy Social
-                                Media Marketing &amp; Strategy Social Media Marketing &amp; Strategy Social Media
-                                Marketing &amp;
-                                Strategy Social Media Marketing &amp; Strategy Social Media Marketing &amp; Strategy
-                                Social Media
-                                Marketing &amp; Strategy Social Media Marketing &amp; Strategy Social Media Marketing
-                                &amp; Strategy
-                                Social Media Marketing &amp; Strategy Social Media Marketing &amp; Strategy Social Media
-                                Marketing
-                                &amp; Strategy Social Media Marketing &amp; Strategy </h3>
-                        </div>
-                    </section> -->
-                    <!-- <section data-order="8" class="three-cols once" data-scroll="" data-scroll-call="updateScroll">
-                        <div class="wrapper">
-                            <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                                data-scroll-offset="10%">
-                                <a class="linkCont" href="#" alt="Scopri progetto">
-                                    <div class="wrp">
-                                        <div class="imageprj">
-                                            <picture class="picture">
-                                                <img class="lazy-slide" src="./assets/images/laptop-working.gif" alt="">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <h3>PortFolio</h3>
-                                        <h4>Shooting / Stories</h4>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                                data-scroll-offset="10%">
-                                <a class="linkCont" href="#" alt="Scopri progetto">
-                                    <div class="wrp">
-                                        <div class="imageprj">
-                                            <picture class="picture">
-                                                <img class="lazy-slide" src="./assets/images/wonfesta_event.jpg"
-                                                    alt="AWD Agency - Shooting Keys">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <h3>Woori Bank</h3>
-                                        <h4>Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                                data-scroll-offset="10%">
-                                <div class="linkCont">
-                                    <div class="wrp">
-                                        <div class="imageprj">
-                                            <picture class="picture">
-                                                <img class="lazy-slide" src="./assets/images/mainBanner_01.jpg" alt="">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <h3>BookSaTong</h3>
-                                        <h4>Identity</h4>
-                                    </div>
-                                </div>
-                    </section> -->
-                    <!-- <section data-order="11" class="two-cols once" data-scroll="" data-scroll-call="updateScroll">
-                        <div class="wrapper">
-                            <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                                data-scroll-offset="10%">
-                                <a class="linkCont" href="#" alt="Scopri progetto">
-                                    <div class="wrp">
-                                        <div class="imageprj">
-                                            <picture class="picture">
-                                                <img class="lazy-slide" src="./assets/images/news_03.png" alt="">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <h3>Netflix</h3>
-                                        <h4>Web &amp; Digital / Ecommerce Website</h4>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="listItem" data-scroll-call="web-list-project-animation-1" data-scroll=""
-                                data-scroll-offset="10%">
-                                <a class="linkCont" href="#" alt="Scopri progetto">
-                                    <div class="wrp">
-                                        <div class="imageprj">
-                                            <picture class="picture">
-                                                <img class="lazy-slide" src="./assets/images/mainBanner01.jpg" alt="">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <h3>StarBucks</h3>
-                                        <h4>Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                    <section data-order="13" class="full">
-                        <div class="listItem">
-                            <div class="projectImage" data-scroll="" data-scroll-offset="10%"
-                                data-scroll-call="home-new-layout-1">
-                                <a class="linkCont" href="#" alt="Scopri progetto">
-                                    <picture>
-                                        <img src="./assets/images/mainBanner01.png" alt="">
-                                    </picture>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <h3>Nike Store</h3>
-                                <h4>Video / Fashion Film</h4>
-                            </div>
-                        </div>
-                    </section> -->
-                </div>
-                <!-- <div class="wrapper mobile all-tablet">
-                    <div class="mobile pro-portrait">
-                        <div class="row clearfix">
-                            <section data-order="1" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Villa Franciacorta</h3>
-                                        <h4 class="stagger-text-inview">Web &amp; Digital / Ecommerce Website</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2023/06/AwdAgency-Villa-44-600x900.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="2" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Calliope</h3>
-                                        <h4 class="stagger-text-inview">Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2019/10/anteprima-33-600x900.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row clearfix">
-                            <section data-order="3" class="homeElement">
-                                <div class="text container-stagger-text-inview bottom-element">
-                                    <h3 class="stagger-text-inview">Cagliari Calcio</h3>
-                                    <h4 class="stagger-text-inview">Web &amp; Digital / Corporate Website</h4>
-                                </div>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <picture>
-                                                <img src="https://www.awdagency.com/main/wp-content/uploads/2023/06/awdagency-cagliaricalcio-m.jpg"
-                                                    alt="">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="4" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Laura Pausini</h3>
-                                        <h4 class="stagger-text-inview">Web &amp; Digital / Personal Website</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLin" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2019/10/laura_pausini_simili-awdagency-web.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row clearfix">
-                            <section data-order="5" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Cromia</h3>
-                                        <h4 class="stagger-text-inview">Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLin" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2020/09/Cromia-Anteprima-Awd-1.jpg"
-                                                        alt="AWD Agency - Shooting Cromia">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="6" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Double Eight</h3>
-                                        <h4 class="stagger-text-inview">Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLin" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2019/10/awd_agency_shooting_adv_campaign_double_eight_fall_winter_2016_17_anteprima.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row clearfix">
-                            <section data-order="7" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Doucals</h3>
-                                        <h4 class="stagger-text-inview">Web &amp; Digital / Ecommerce Website</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLin" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2023/06/Doucals-AwdAgency-Cover-Listing.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="8" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Sikha Haircare</h3>
-                                        <h4 class="stagger-text-inview">Web &amp; Digital / Corporate Website</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLin" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2023/06/sikha_haircare_homepage_1.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <section class="mob-new-text-block-about" data-scroll=""
-                            data-scroll-call="new-text-block-about" data-scroll-offset="15%">
-                            <div class="text-big">
-                                <h3>Thanks to a team of young,
-                                    dynamic and
-                                    motivated talents, we have been carrying out cutting-edge projects with unique and
-                                    innovative
-                                    design, combining creativity, strategy and technology. </h3>
-                            </div>
-                            <div class="text-scroll">
-                                <a class="mouseHoverDown" href="#">About Awd
-                                    Agency</a>
-                            </div>
-                        </section>
-                        <div class="row clearfix">
-                            <section data-order="9" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Paoloni</h3>
-                                        <h4 class="stagger-text-inview">Shooting / Stories</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLin" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2019/10/anteprima-6.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="10" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Keys</h3>
-                                        <h4 class="stagger-text-inview">Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLin" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2020/09/Keys-Miami-Anteprima.jpg"
-                                                        alt="AWD Agency - Shooting Keys">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row clearfix">
-                            <section data-order="11" class="homeElement">
-                                <div class="text container-stagger-text-inview bottom-element">
-                                    <h3 class="stagger-text-inview">Lamborghini</h3>
-                                    <h4 class="stagger-text-inview">Identity</h4>
-                                </div>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <picture>
-                                                <img src="https://www.awdagency.com/main/wp-content/uploads/2019/12/lamborghini-mobile.jpg"
-                                                    alt="">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="12" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Mattia Capezzani</h3>
-                                        <h4 class="stagger-text-inview">Web &amp; Digital / Ecommerce Website</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLin" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2023/06/MattiaCapezzani-AwdAgency-Listing.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row clearfix">
-                            <section data-order="13" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">W6YZ</h3>
-                                        <h4 class="stagger-text-inview">Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLin" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2019/10/anteprima-2.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="14" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Coltorti</h3>
-                                        <h4 class="stagger-text-inview">Video / Fashion Film</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLin" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2019/10/Coltorti-VisionOfLight-Video-Awd-1.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="desktop exclude-pro-portrait">
-                        <div class="row clearfix">
-                            <section data-order="1" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Villa Franciacorta</h3>
-                                        <h2 class="stagger-text-inview">Website</h2>
-                                        <h4 class="stagger-text-inview">Web &amp; Digital / Ecommerce Website</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2023/06/VillaFranciacorta-AwdAgency-Cover-2.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="2" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Calliope</h3>
-                                        <h2 class="stagger-text-inview">Live the Beauty</h2>
-                                        <h4 class="stagger-text-inview">Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2019/10/Calliope-LiveTheBeauty-Awd.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row clearfix">
-                            <section data-order="3" class="homeElement">
-                                <div class="text container-stagger-text-inview bottom-element">
-                                    <h3 class="stagger-text-inview">Cagliari Calcio</h3>
-                                    <h2 class="stagger-text-inview">Website</h2>
-                                    <h4 class="stagger-text-inview">Web &amp; Digital / Corporate Website</h4>
-                                </div>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <picture>
-                                                <img src="https://www.awdagency.com/main/wp-content/uploads/2023/06/AwdAgency-CagliariCalcio.jpg"
-                                                    alt="">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="4" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Laura Pausini</h3>
-                                        <h2 class="stagger-text-inview">Website</h2>
-                                        <h4 class="stagger-text-inview">Web &amp; Digital / Personal Website</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2019/10/copertina-interna-laura-pausini-awd.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row clearfix">
-                            <section data-order="5" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Cromia</h3>
-                                        <h2 class="stagger-text-inview">Storie di Stile</h2>
-                                        <h4 class="stagger-text-inview">Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2020/09/Cromia-CopertinaInterna-Awd.jpg"
-                                                        alt="AWD Agency - Shooting Cromia">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="6" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Double Eight</h3>
-                                        <h2 class="stagger-text-inview">Iceland</h2>
-                                        <h4 class="stagger-text-inview">Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2019/10/D8-Iceland-Awd.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row clearfix">
-                            <section data-order="7" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Doucals</h3>
-                                        <h2 class="stagger-text-inview">Website</h2>
-                                        <h4 class="stagger-text-inview">Web &amp; Digital / Ecommerce Website</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2023/06/Doucals-AwdAgency-Cover.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="8" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Sikha Haircare</h3>
-                                        <h2 class="stagger-text-inview">Website</h2>
-                                        <h4 class="stagger-text-inview">Web &amp; Digital / Corporate Website</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2023/06/Sikha-Cover.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row clearfix">
-                            <section data-order="9" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Paoloni</h3>
-                                        <h2 class="stagger-text-inview">Menswear is Changing</h2>
-                                        <h4 class="stagger-text-inview">Shooting / Stories</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2019/10/Paoloni-MenswearIsChanging-Awd.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="10" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Keys</h3>
-                                        <h2 class="stagger-text-inview">Every Day All Day</h2>
-                                        <h4 class="stagger-text-inview">Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2020/09/Keys-Copertina.jpg"
-                                                        alt="AWD Agency - Shooting Keys">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row clearfix">
-                            <section data-order="11" class="homeElement">
-                                <div class="text container-stagger-text-inview bottom-element">
-                                    <h3 class="stagger-text-inview">Lamborghini</h3>
-                                    <h2 class="stagger-text-inview">We Made It.</h2>
-                                    <h4 class="stagger-text-inview">Identity</h4>
-                                </div>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <picture>
-                                                <img src="https://www.awdagency.com/main/wp-content/uploads/2019/12/lamborghini.jpg"
-                                                    alt="">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="12" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Mattia Capezzani</h3>
-                                        <h2 class="stagger-text-inview">Website</h2>
-                                        <h4 class="stagger-text-inview">Web &amp; Digital / Ecommerce Website</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2023/06/MattiaCapezzani-AwdAgency-Cover-2.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row clearfix">
-                            <section data-order="13" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">W6YZ</h3>
-                                        <h2 class="stagger-text-inview">Street Spirit</h2>
-                                        <h4 class="stagger-text-inview">Shooting / Adv Campaign</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <img src="./assets/images/github.webp" alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section data-order="14" class="homeElement">
-                                <a class="homeElementLink--text bottom-element" href="#">
-                                    <div class="text container-stagger-text-inview ">
-                                        <h3 class="stagger-text-inview">Coltorti</h3>
-                                        <h2 class="stagger-text-inview">Vision of Light</h2>
-                                        <h4 class="stagger-text-inview">Video / Fashion Film</h4>
-                                    </div>
-                                </a>
-                                <div class="image container-stagger-image-inview">
-                                    <div class="image__wrapper">
-                                        <div class="image__container">
-                                            <a class="homeElementLink" href="#">
-                                                <picture>
-                                                    <video muted="" autoplay="" loop=""
-                                                        poster="https://tistory1.daumcdn.net/tistory/5610541/skin/images/SouredAppleClouds.jpg">
-                                                        <source
-                                                            src="https://tistory1.daumcdn.net/tistory/5610541/skin/images/SouredAppleClouds.mp4"
-                                                            type="video/mp4">
-                                                        <strong>Your browser does not support the video tag.</strong>
-                                                    </video>
-                                                    <video
-                                                        src="https://tistory1.daumcdn.net/tistory/5610541/skin/images/SouredAppleClouds.mp4"></video>
-                                                    <img src="https://www.awdagency.com/main/wp-content/uploads/2019/10/coltorti-vision-of-light.jpg"
-                                                        alt="">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="new-block-title-big insight" data-scroll="" data-scroll-call="new-block-title-big2"
-                    data-scroll-offset="15%">
-                    <div class="title">
-                        <h3>Awd Agency</h3>
-                        <h3>Insights</h3>
-                    </div>
-                </div>
-                <section class="new-numbers-block">
-                    <div class="item">
-                        <div class="cont">
-                            <h2>Years</h2>
-                            <div class="inner">
-                                <h3 class="inview-award-scrumble-mobile once" data-number="22" data-scroll=""
-                                    data-scroll-call="awardScrumble" data-scroll-offset="30%">
-                                    <span>2</span><span>2</span>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <h2>Awards</h2>
-                            <div class="inner">
-                                <h3 class="inview-award-scrumble-mobile once" data-number="176" data-scroll=""
-                                    data-scroll-call="awardScrumble" data-scroll-offset="30%">
-                                    <span>1</span><span>7</span><span>6</span>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <h2>People</h2>
-                            <div class="inner">
-                                <h3 class="inview-award-scrumble-mobile once" data-number="18" data-scroll=""
-                                    data-scroll-call="awardScrumble" data-scroll-offset="30%">
-                                    <span>1</span><span>8</span>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <h2>Creativity</h2>
-                            <div class="inner">
-                                <h3 class="inview-award-scrumble-mobile once" data-number="99" data-after="∞"
-                                    data-scroll="" data-scroll-call="awardScrumble" data-scroll-offset="30%"
-                                    style="opacity: 0;">
-                                    <span>9</span><span>9</span>
-                                </h3>
-                                <h4>∞</h4>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
             <div class="cursor">
                 <div class="pointer"></div>
+                <span class="view">DISCOVER</span>
             </div>
-            <!-- <div id="menuOnDemand">
-                <div class="language">
-                    <ul class="header-custom-language">
-                        <li class="mouseHoverMenu">
-                            <a href="#" class="wpml-ls-link">
-                                Eng<span>glish</span>
-                            </a>
-                        </li>
-                        <li class="mouseHoverMenu">
-                            <a href="#" class="wpml-ls-link">
-                                Ita<span>aliano</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="animate-menu-on-demand js-stagger-email mail mouseHoverMenu">
-                    <div class="mail-container">
-                        <a class="" href="dong9639@naver.com">dong9639@naver.com</a>
-                    </div>
-                </div>
-                <div class="social">
-                    <ul>
-                        <li class="mouseHoverMenu animate-menu-on-demand js-stagger-social">
-                            <a class="" href="#">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 551 551"
-                                    style="enable-background:new 0 0 551 551;" xml:space="preserve">
-                                    <path class="st0" d="M406.9,2.6l-71.1-0.1c-79.9,0-131.5,52.9-131.5,134.9v62.2h-71.5c-6.2,0-11.2,5-11.2,11.2v90.1
-            		c0,6.2,5,11.2,11.2,11.2h71.5v227.4c0,6.2,5,11.2,11.2,11.2h93.2c6.2,0,11.2-5,11.2-11.2V312h83.6c6.2,0,11.2-5,11.2-11.2v-90.1
-            		c0-3-1.2-5.8-3.3-7.9c-2.1-2.1-4.9-3.3-7.9-3.3h-83.6v-52.7c0-25.3,6-38.2,39-38.2h47.9c6.2,0,11.2-5,11.2-11.2V13.7
-            		C418,7.6,413,2.6,406.9,2.6z"></path>
-                                </svg></a>
-                        </li>
-                        <li class="mouseHoverMenu animate-menu-on-demand js-stagger-social">
-                            <a class="" href="#">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 551 551"
-                                    style="enable-background:new 0 0 551 551;" xml:space="preserve">
-                                    <path class="st0" d="M386.9,0H164.2C73.6,0,0,73.6,0,164.2v222.7C0,477.4,73.6,551,164.2,551h222.7c90.5,0,164.2-73.6,164.2-164.2
-            		V164.2C551,73.6,477.4,0,386.9,0z M495.6,386.9c0,60-48.7,108.7-108.7,108.7H164.2c-60,0-108.7-48.7-108.7-108.7V164.2
-            		c0-60,48.7-108.7,108.7-108.7h222.7c60,0,108.7,48.7,108.7,108.7L495.6,386.9L495.6,386.9z"></path>
-                                    <path class="st0" d="M275.5,133C196.9,133,133,196.9,133,275.5S196.9,418,275.5,418S418,354.1,418,275.5S354.1,133,275.5,133z
-            		 M275.5,362.6c-48.1,0-87.1-39-87.1-87.1s39-87.1,87.1-87.1s87.1,39,87.1,87.1S323.6,362.6,275.5,362.6z">
-                                    </path>
-                                    <circle class="st0" cx="418.3" cy="134.1" r="34.1"></circle>
-                                </svg></a>
-                        </li>
-                        <li class="mouseHoverMenu animate-menu-on-demand js-stagger-social">
-                            <a class="" href="#">
-                                <svg version="1.1" id="Bold" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                    <style type="text/css">
-                                        .st0 {
-                                            fill: #FFFFFF;
-                                        }
-                                    </style>
-                                    <path class="st0" d="M511.9,512L511.9,512l0.1,0V324.2c0-91.9-19.8-162.6-127.2-162.6c-51.6,0-86.3,28.3-100.4,55.2h-1.5v-46.6
-            	H181.1V512h106V342.7c0-44.6,8.4-87.7,63.6-87.7c54.4,0,55.2,50.9,55.2,90.5V512L511.9,512z"></path>
-                                    <path class="st0" d="M8.4,170.2h106.2V512H8.4L8.4,170.2z"></path>
-                                    <path class="st0"
-                                        d="M61.5,0C27.5,0,0,27.5,0,61.5s27.5,62.1,61.5,62.1S123,95.4,123,61.5C122.9,27.5,95.4,0,61.5,0z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="wrapper">
-                    <div class="menu desktop exclude-pro-portrait">
-                        <a href="#">
-                            <div class=" non-progetto mouseHoverMenu js-stagger-voce-menu animate-menu-on-demand test-2 menu__item menu__item--1"
-                                id="menu-item-6357">
-                                <span class="menu__item-inner">About</span>
-                                <div class="rail link__rail desktop rail--hover rail-locked" data-direction="left">
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                    </div>
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                        <div class="rail-item"><span>About</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class=" non-progetto mouseHoverMenu js-stagger-voce-menu animate-menu-on-demand test-2 menu__item menu__item--2"
-                                id="menu-item-6358">
-                                <span class="menu__item-inner">Awards</span>
-                                <div class="rail link__rail desktop rail-locked rail--hover" data-direction="left">
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                    </div>
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                        <div class="rail-item"><span>Awards</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class=" non-progetto mouseHoverMenu js-stagger-voce-menu animate-menu-on-demand test-2 menu__item menu__item--3"
-                                id="menu-item-6359">
-                                <span class="menu__item-inner">Career</span>
-                                <div class="rail link__rail desktop rail-locked rail--hover" data-direction="left">
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                    </div>
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                        <div class="rail-item"><span>Career</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class=" non-progetto mouseHoverMenu js-stagger-voce-menu animate-menu-on-demand test-2 menu__item menu__item--4"
-                                id="menu-item-6361">
-                                <span class="menu__item-inner">Web &amp; Digital</span>
-                                <div class="rail link__rail desktop rail-locked rail--hover" data-direction="left">
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                    </div>
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                        <div class="rail-item"><span>Web &amp; Digital</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class=" non-progetto mouseHoverMenu js-stagger-voce-menu animate-menu-on-demand test-2 menu__item menu__item--5"
-                                id="menu-item-6362">
-                                <span class="menu__item-inner">Shooting</span>
-                                <div class="rail link__rail desktop rail-locked rail--hover" data-direction="left">
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                    </div>
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                        <div class="rail-item"><span>Shooting</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class=" non-progetto mouseHoverMenu js-stagger-voce-menu animate-menu-on-demand test-2 menu__item menu__item--6"
-                                id="menu-item-6363">
-                                <span class="menu__item-inner">Video</span>
-                                <div class="rail link__rail desktop rail-locked rail--hover" data-direction="left">
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                    </div>
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                        <div class="rail-item"><span>Video</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class=" non-progetto mouseHoverMenu js-stagger-voce-menu animate-menu-on-demand test-2 menu__item menu__item--7"
-                                id="menu-item-6360">
-                                <span class="menu__item-inner">Contact</span>
-                                <div class="rail link__rail desktop rail-locked rail--hover" data-direction="left">
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                    </div>
-                                    <div class="rail__container">
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                        <div class="rail-item"><span>Contact</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="menu mobile pro-portrait">
-                        <div class="menu-wrapper">
-                            <div class="main-menu-mobile">
-                                <ul id="menu-main-menu-inglese" class="main_menu--mobile">
-                                    <li id="menu-item-979"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page 60 current-object-id-0">
-                                        <a href="#">About</a>
-                                    </li>
-                                    <li id="menu-item-6351"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page 6200 current-object-id-0">
-                                        <a href="#">Awards</a>
-                                    </li>
-                                    <li id="menu-item-6352"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page 6344 current-object-id-0">
-                                        <a href="#">Career</a>
-                                    </li>
-                                    <li id="menu-item-980"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page 902 current-object-id-0">
-                                        <a href="#">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="sub-menu-mobile sub-menu-mobile--web">
-                                <div class="titoletto">
-                                    <h3>Web &amp; Digital</h3>
-                                </div>
-                                <ul id="menu-sub-menu-mobile-web-and-digital-inglese" class="sub_menu--mobile">
-                                    <li id="menu-item-6715"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-tipologia 99 titolo-acf- current-object-id-0">
-                                        <a href="#">Main Projects</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="sub-menu-mobile sub-menu-mobile--shooting">
-                                <div class="titoletto">
-                                    <h3>Shooting</h3>
-                                </div>
-                                <ul id="menu-sub-menu-mobile-shooting-inglese" class="sub_menu--mobile">
-                                    <li id="menu-item-6367"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-tipologia 103 titolo-acf-Adv Campaign current-object-id-0">
-                                        <a href="#">Adv Campaign</a>
-                                    </li>
-                                    <li id="menu-item-6368"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-tipologia 104 titolo-acf-Fashion Stories current-object-id-0">
-                                        <a href="#">Fashion
-                                            Stories</a>
-                                    </li>
-                                    <li id="menu-item-6369"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-tipologia 105 titolo-acf-Creative Content current-object-id-0">
-                                        <a href="#">Creative
-                                            Content</a>
-                                    </li>
-                                    <li id="menu-item-6370"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-tipologia 217 titolo-acf-Tbt current-object-id-0">
-                                        <a href="#">Tbt</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="sub-menu-mobile sub-menu-mobile--video">
-                                <div class="titoletto">
-                                    <h3>Video</h3>
-                                </div>
-                                <ul id="menu-sub-menu-mobile-video-inglese" class="sub_menu--mobile">
-                                    <li id="menu-item-6371"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-tipologia 212 titolo-acf-Fashion Film current-object-id-0">
-                                        <a href="#">Fashion Film</a>
-                                    </li>
-                                    <li id="menu-item-6372"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-tipologia 102 titolo-acf-Creative Content current-object-id-0">
-                                        <a href="#">Creative
-                                            Content</a>
-                                    </li>
-                                    <li id="menu-item-6373"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-tipologia 101 titolo-acf-Corporate current-object-id-0">
-                                        <a href="#">Corporate</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </main>
         <footer class="footer">
-            <div class="wrapper">
+            <div class="group-area">
                 <div class="mail">
-                    <a href="">
-                        <div class="linkFoot linkFoot--top desktop" data-scroll="" data-scroll-call="footerAnimation1">
+                    <a href="#" class="linkFoot-wrap">
+                        <div class="linkFoot linkFoot-top on">
                             <p>Let's keep in touch</p>
-                            <span>Let's keep in
-                                touch</span>
+                            <span>Let's keep in touch</span>
                         </div>
-                        <div class="linkFoot linkFoot--bottom desktop" data-scroll=""
-                            data-scroll-call="footerAnimation1">
-                            <p>hello@awdagency.com</p>
-                            <span>hello@awdagency.com</span>
+                        <div class="linkFoot linkFoot-bottom">
+                            <p>dong9639@naver.com</p>
+                            <span>dong9639@naver.com</span>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="credits">
-                <div class="credits__wrapper" data-scroll="" data-scroll-call="footerAnimation1"
-                    data-scroll-offset="-10%">
-                    <p>LandingPage</p>
-                    <div class="credits__container">
-                        <p class="divider ">.</p>
+                <div class="credits-area">
+                    <p>2023<sub>©</sub></p>
+                    <div class="credits-container">
+                        <p class="divider">.</p>
                         <p>
-                            <a class="mouseHoverDown" href="#">Privacy Policy</a>
+                            <span>Lee-DongHo</span>
                         </p>
                         <p class="divider">.</p>
-                        <p class="mouseHoverDown openCookie" id="cookieOpen">Cookie</p>
+                        <p class="rights">All Rights Reserved</p>
                     </div>
                 </div>
             </div>
             <div class="social-footer">
-                <div class="social-footer__wrapper" data-scroll="" data-scroll-call="footerAnimation1"
-                    data-scroll-offset="-10%">
+                <div class="social-footer-area">
                     <p>
-                        <a class="mouseHoverDown" href="https://light9639.tistory.com/">Tistory</a>
+                        <a class="mouseHoverDown" target="_blank" href="https://light9639.tistory.com/">Tistory</a>
                     </p>
                     <p class="divider">.</p>
                     <p>
-                        <a class="mouseHoverDown" href="https://github.com/light9639">Github</a>
+                        <a class="mouseHoverDown" target="_blank" href="https://github.com/light9639">Github</a>
                     </p>
                 </div>
             </div>
-            <!-- <h2 class="headline">
-                Let's keep in touch<br>
-                hello@awdagency.com
-            </h2> -->
-            <!-- <p class="sns-wrap">
-                <a href="">Facebook</a>
-                <a href="">Instagram</a>
-            </p>
-            <a href="">Awd Agency ©2023 . Privacy Policy . Cookie</a> -->
         </footer>
     </div>
-
+    <div class="state"></div>
 </body>
 
 </html>

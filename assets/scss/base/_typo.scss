@@ -1,9 +1,11 @@
 @font-face {
     font-family: 'Monument Grotesk';
-    src: url(../fonts/Monument_Grotesk1.woff2) format('woff');
+    src: url(../fonts/Monument_Grotesk3.woff2) format('woff');
 }
 
 @font-face {
     font-family: 'AktivGrotesk';
     src: url(../fonts/Monument_Grotesk2.woff2) format('woff');
 }
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
