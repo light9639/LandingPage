@@ -1,11 +1,13 @@
 # 🎉 PortFolio를 소개하는 랜딩 페이지입니다.
 :octocat: 바로가기 : https://light9639.github.io/LandingPage/
 
+![127 0 0 1_5500_index html (1)](https://github.com/light9639/LandingPage/assets/95972251/94f61727-25ca-4bd4-9988-7548eaf3b61a)
+
 ✨ PortFolio를 소개하는 랜딩 페이지입니다 ✨
 ## :calendar: 개발인원 및 기간
 - 1인 개발 : 작업기간: 5일
 ## :dart: 개발 목적
-- 포트폴리오를 소개하는 사이트가 필요하여 만들게 되었습니다.
+- 포트폴리오를 소개하는 사이트가 필요하여 제작하게 되었습니다.
 ## :black_nib: 구현기능
 - 
 ## :hammer_and_wrench: 적용 기술
