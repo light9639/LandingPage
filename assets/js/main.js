@@ -349,11 +349,12 @@ marqueeList.forEach(element => {
  */
 let number = document.querySelectorAll('.insights-list .inview')
 let startCount = { var: 0 };
-let NumList = [22, 176, 18, 1000]
 
 number.forEach((element, i) => {
     gsap.to(startCount, {
-        var: element.innerText, duration: 5, ease: "none",
+        var: element.innerText,
+        duration: 5,
+        ease: "none",
         onUpdate: changeNumber,
         scrollTrigger: {
             trigger: ".insights-list .inview",
@@ -362,6 +363,18 @@ number.forEach((element, i) => {
     function changeNumber() {
         number[i].innerHTML = (startCount.var).toFixed();
     }
+    if (i == 3) {
+        number[i].innerHTML = (startCount.var).toFixed();
+        setTimeout(() => {
+            number[i].innerHTML = '<span>∞</span>'
+        }, 5500)
+        setTimeout(() => {
+            number[i].firstChild.classList.add('opacity')
+        }, 5600)
+    } else {
+        number[i].innerHTML = (startCount.var).toFixed();
+    }
+
 })
 
 /**

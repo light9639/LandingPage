@@ -421,6 +421,10 @@
 
                 &:first-child {
                     margin-top: 6.25vw;
+
+                    img {
+                        object-position: 97.5%;
+                    }
                 }
 
                 &:last-child {
@@ -712,6 +716,15 @@
                         font-size: 8vw;
                         -webkit-font-smoothing: antialiased;
                         -webkit-text-stroke: 2px #d1ed5d;
+
+                        span {
+                            transition: opacity 3s;
+                            opacity: 0;
+
+                            &.opacity {
+                                opacity: 1;
+                            }
+                        }
                     }
                 }
             }
