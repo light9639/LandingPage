@@ -40,6 +40,10 @@
         opacity: 0;
         visibility: hidden;
 
+        @include tb {
+            display: none;
+        }
+
         &.on {
             top: 5vh;
             transform: translate(0%);

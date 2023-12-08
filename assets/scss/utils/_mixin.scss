@@ -16,9 +16,14 @@
     }
 }
 
-
 @mixin m() {
     @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin m-sm() {
+    @media (max-width: 480px) {
         @content;
     }
 }

@@ -5,6 +5,14 @@
     overflow: hidden;
     z-index: 1;
 
+    @include m {
+        height: 75vh;
+    }
+
+    @include m-sm {
+        height: 50vh;
+    }
+
     .group-area {
         position: absolute;
         top: 50%;
@@ -12,6 +20,10 @@
         width: 87.5vw;
         transform: translateY(-50%);
         z-index: 50;
+
+        @include m {
+            transform: translateY(-100%);
+        }
 
         .mail {
             position: relative;
@@ -76,8 +88,12 @@
         bottom: 5vh;
         right: 6.25vw;
         overflow: hidden;
-        -webkit-transform: translateY(50%);
         transform: translateY(50%);
+
+        @include m {
+            left: 6.25vw;
+            right: auto;
+        }
 
         .credits-area {
             display: flex;
@@ -90,6 +106,18 @@
                 font-weight: normal;
                 font-size: 27px;
                 position: relative;
+
+                @include tb {
+                    font-size: 20px;
+                }
+
+                @include m {
+                    font-size: 16px;
+                }
+
+                @include m-sm {
+                    font-size: 14px;
+                }
 
                 sub {
                     top: -0.5em;
@@ -113,6 +141,14 @@
                     font-size: 27px;
                     position: relative;
 
+                    @include tb {
+                        font-size: 20px;
+                    }
+
+                    @include m {
+                        font-size: 14px;
+                    }
+
                     &.divider {
                         margin-left: 5px;
                         margin-right: 5px;
@@ -129,6 +165,10 @@
         overflow: hidden;
         transform: translateY(50%);
 
+        @include m {
+            bottom: 10vh;
+        }
+
         .social-footer-area {
             display: flex;
             align-items: center;
@@ -141,6 +181,18 @@
                 font-weight: normal;
                 font-size: 27px;
                 position: relative;
+
+                @include tb {
+                    font-size: 20px;
+                }
+
+                @include m {
+                    font-size: 16px;
+                }
+
+                @include m-sm {
+                    font-size: 14px;
+                }
 
                 &.divider {
                     margin-left: 5px;
