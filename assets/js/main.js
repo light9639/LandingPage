@@ -86,18 +86,15 @@ mt
     .addLabel('main1')
     .to('.header .logo-wrap', {
         'filter': 'blur(' + 0 + 'px)',
-        delay: 0.2,
-        duration: 2,
+        duration: 1.5,
     }, 'main1')
     .to('.header .gnb .list', {
         'filter': 'blur(' + 0 + 'px)',
-        duration: 2,
-        stagger: 0.2
+        duration: 1.5,
     }, 'main1')
     .to('.header .group-time', {
         'filter': 'blur(' + 0 + 'px)',
-        delay: 0.8,
-        duration: 2,
+        duration: 1.5,
     }, 'main1')
 
 /**
