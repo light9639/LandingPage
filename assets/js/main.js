@@ -76,28 +76,27 @@ ItemList.forEach(el => {
 /**
  * header 애니메이션 타임라인
  */
-gsap.set('.header .logo-wrap', { yPercent: 100, opacity: 0 })
-gsap.set('.header .gnb.main .list', { yPercent: 100, opacity: 0 })
-gsap.set('.header .gnb.sub .list', { yPercent: 200, opacity: 0 })
-gsap.set('.header .group-time', { yPercent: 100, opacity: 0 })
+gsap.set('.header .logo-wrap', { 'filter': 'blur(' + 100 + 'px)' })
+gsap.set('.header .gnb.main .list', { 'filter': 'blur(' + 100 + 'px)' })
+gsap.set('.header .gnb.sub .list', { 'filter': 'blur(' + 100 + 'px)' })
+gsap.set('.header .group-time', { 'filter': 'blur(' + 100 + 'px)' })
 
 const mt = gsap.timeline();
 mt
     .addLabel('main1')
     .to('.header .logo-wrap', {
-        yPercent: 0,
-        opacity: 1,
+        'filter': 'blur(' + 0 + 'px)',
         delay: 0.2,
         duration: 2,
     }, 'main1')
     .to('.header .gnb .list', {
-        yPercent: 0,
-        opacity: 1,
+        'filter': 'blur(' + 0 + 'px)',
         duration: 2,
+        stagger: 0.2
     }, 'main1')
     .to('.header .group-time', {
-        yPercent: 0,
-        opacity: 1,
+        'filter': 'blur(' + 0 + 'px)',
+        delay: 0.8,
         duration: 2,
     }, 'main1')
 
@@ -130,7 +129,7 @@ $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
     var innerHeight = $(window).innerHeight();
     var scrollHeight = $('body').prop('scrollHeight');
-    if (scrollTop == 0 || scrollTop + innerHeight >= scrollHeight) {
+    if (scrollTop == 0 || scrollTop + innerHeight + 10 >= scrollHeight) {
         $('.header .gnb').addClass('on')
     } else {
         $('.header .gnb').removeClass('on')

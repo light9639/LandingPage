@@ -23,6 +23,10 @@
             transform: translateY(-50%);
             height: 40px;
             width: auto;
+
+            @include tb {
+                left: 3vw;
+            }
         }
 
         .logo-link {
@@ -69,7 +73,7 @@
                     color: #fff;
                     font-family: "Monument Grotesk";
                     font-weight: normal;
-                    font-size: 19px;
+                    font-size: 16px;
                     text-transform: uppercase;
 
                     &:hover::before {
@@ -99,6 +103,11 @@
         top: 5vh;
         right: 3vw;
 
+        @include tb {
+            top: 4.5vh;
+            right: 1vw;
+        }
+
         .time-wrap {
             opacity: 1;
             display: flex;
@@ -109,6 +118,11 @@
             font-size: 1.2em;
             font-weight: 300;
             line-height: 1.7;
+
+            @include tb {
+                font-size: 1em;
+                margin-bottom: -0.1em;
+            }
 
             em {
                 width: 2.6em;

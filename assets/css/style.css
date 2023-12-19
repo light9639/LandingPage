@@ -371,6 +371,11 @@ body::-webkit-scrollbar-track {
   height: 40px;
   width: auto;
 }
+@media (max-width: 1024px) {
+  .header .logo-wrap .logo {
+    left: 3vw;
+  }
+}
 .header .logo-wrap .logo-link {
   display: block;
   width: 64px;
@@ -413,7 +418,7 @@ body::-webkit-scrollbar-track {
   color: #fff;
   font-family: "Monument Grotesk";
   font-weight: normal;
-  font-size: 19px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 .header .gnb .list .item .link:hover::before {
@@ -444,6 +449,12 @@ body::-webkit-scrollbar-track {
   top: 5vh;
   right: 3vw;
 }
+@media (max-width: 1024px) {
+  .header .group-time {
+    top: 4.5vh;
+    right: 1vw;
+  }
+}
 .header .group-time .time-wrap {
   opacity: 1;
   display: -webkit-box;
@@ -458,6 +469,12 @@ body::-webkit-scrollbar-track {
   font-size: 1.2em;
   font-weight: 300;
   line-height: 1.7;
+}
+@media (max-width: 1024px) {
+  .header .group-time .time-wrap {
+    font-size: 1em;
+    margin-bottom: -0.1em;
+  }
 }
 .header .group-time .time-wrap em {
   width: 2.6em;
